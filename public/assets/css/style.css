@@ -1,0 +1,551 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    line-height: 1.7;
+    color: #516171;
+    overflow-x: hidden;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-weight: 700 !important;
+}
+
+a {
+    color: #092023;
+    transition: all 0.4s ease;
+}
+
+img {
+    width: 100%;
+}
+
+/* Navbar */
+/* .top-nav {
+    background-color: #ff0000;
+    padding-top: 6px;
+    padding-bottom: 6px;
+}
+
+.top-nav p {
+    margin-bottom: 0;
+    display: inline-block;
+    margin-right: 18px;
+    color: white;
+}
+
+.top-nav i,
+.top-nav span {
+    vertical-align: middle;
+}
+
+.social-links a {
+    width: 34px;
+    height: 34px;
+    background-color: rgba(255, 255, 255, 0.4);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+    border-radius: 100%;
+}
+
+.social-links a:hover {
+    background-color: white;
+    color: #ff0000;
+} */
+
+.navbar {
+    box-shadow: 0px 6px 30px rgba(0, 0, 0, 0.08);
+}
+
+.navbar .navbar-nav .nav-link:hover,
+.navbar .navbar-nav .nav-link:active {
+    color: #ff0000;
+}
+
+.navbar-brand {
+    font-weight: 700;
+    font-size: 27px;
+    color: #516171;
+}
+
+.navbar-brand span {
+    color: #ff0000;
+}
+
+.navbar ul li a {
+    font-weight: 500;
+}
+/* Akhir Navbar */
+
+
+/* Button di Navbar */
+/* Status : Belum Jadi/Tidak berfungsi */
+.tombol-contact:hover {
+    color: white;
+    background-color: #991818;
+}
+/* Akhir Button di Navbar */
+
+
+/* Banner Carousel */
+.slider {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+    margin-top: 45px;
+}
+
+.slider .list .item {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    inset: 0 0 0 0;
+}
+
+.slider .list .item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.slider .list .item .content {
+    position: absolute;
+    top:20%;
+    width: 1140px;
+    max-width: 80%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding-right: 30%;
+    box-shadow: border;
+    box-sizing: border-box;
+    color: white;
+    text-shadow: 0 20px 20px #0004;
+}
+
+.slider .list .item .content .title,
+.slider .list .item .content .type {
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 45px;
+}
+
+.slider .list .item .content .type {
+    color: #ff0000;
+    margin-bottom: 10px;
+}
+
+.slider .list .item .content .description {
+    font-size: 16px;
+    color: white;
+    background-color: black;
+    border-radius: 6px;
+}
+
+.slider .list .item .content .button {
+    margin-top: 20px;
+}
+
+.slider .list .item .content .button button {
+    border: none;
+    background-color: #eee;
+    padding: 7px 14px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    cursor: pointer;
+    letter-spacing: 2px;
+    transition: 0.4s;
+    border-radius: 7px;
+}
+
+.slider .list .item .content .button button:hover {
+    background-color: #ff0000;
+    color: white;
+}
+
+.thumbnail {
+    display: flex;
+    gap: 20px;
+    position: absolute;
+    bottom: 120px;
+    left: 50%;
+    width: max-content;
+    z-index: 100;
+}
+
+.thumbnail .item {
+    width: 150px;
+    height: 210px;
+    flex-shrink: 0;
+    position: relative;
+}
+
+.thumbnail .item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 5px 0 15px rgb(0, 0, 0, 0.3);
+}
+
+.nextPrevArrows {
+    position: absolute;
+    top: 80%;
+    right: 52%;
+    z-index: 100;
+    width: 300px;
+    max-width: 30%;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.nextPrevArrows button {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #ff0000;
+    border: none;
+    color: white;
+    font-family: monospace;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.nextPrevArrows button:hover {
+    background-color: white;
+    color: #000;
+}
+
+/* Untuk Animasi */
+.slider .list .item:nth-child(1) {
+    z-index: 1;
+}
+
+.slider .list .item:nth-child(1) .content .title,
+.slider .list .item:nth-child(1) .content .type,
+.slider .list .item:nth-child(1) .content .description,
+.slider .list .item:nth-child(1) .content .button {
+    transform: translateY(50px);
+    filter: blur(20px);
+    opacity: 0;
+    animation: showContent 0.5s 1s linear 1 forwards;
+}
+
+@keyframes showContent {
+    to {
+        transform: translateY(0px);
+        filter: blur(00px);
+        opacity: 1;
+    }
+}
+
+.slider .list .item:nth-child(1) .content .title {
+    animation-delay: 0.4s;
+}
+.slider .list .item:nth-child(1) .content .type {
+    animation-delay: 0.6s;
+}
+.slider .list .item:nth-child(1) .content .description {
+    animation-delay: 0.8s;
+}
+.slider .list .item:nth-child(1) .content .button {
+    animation-delay: 1s;
+}
+
+.slider .next .list .item:nth-child(1) img {
+    width: 150px;
+    height: 190px;
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    border-radius: 30px;
+    animation: showImage 0.5s linear 1 forwards;
+}
+
+@keyframes showImage {
+    to {
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: 0;
+    }
+}
+
+.slider.next .thumbnail .item:nth-last-child(1) {
+    overflow: hidden;
+    animation: showThumbnail 0.5s linear 1 forwards;
+}
+.slider.prev .list .item img {
+    z-index: 100;
+}
+
+@keyframes showThumbnail {
+    from {
+        width: 0;
+        opacity: 0;
+    }
+}
+
+.slider.next .thumbnail {
+    animation: effectNext .5s linear 1 forwards;
+}
+
+@keyframes effectNext {
+    from {
+        transform: translateX(150px);
+    }
+}
+
+.slider.prev .list .item:nth-child(2) {
+    z-index: 2;
+}
+
+.slider.prev .list .item:nth-child(2) img {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    animation: outFrame 0.5s linear 1 forwards;
+}
+
+@keyframes outFrame {
+    to {
+        width: 150px;
+        height: 190px;
+        bottom: 50px;
+        left: 50%;
+        border-radius: 20px;
+    }
+}
+
+.slider.prev .thumbnail .item:nth-child(1) {
+    overflow: hidden;
+    opacity: 0;
+    animation: showThumbnail .5s linear 1 forwards;
+}
+
+.slider.prev .list .item:nth-child(1) .content .title,
+.slider.prev .list .item:nth-child(1) .content .type,
+.slider.prev .list .item:nth-child(1) .content .description,
+.slider.prev .list .item:nth-child(1) .content .button {
+    animation: contentOut 0.5s 1s linear 1 forwards;
+}
+
+@keyframes contentOut {
+    to {
+        transform: translateY(-150px);
+        filter:blur(20px);
+        opacity: 0;
+    }
+}
+
+@media screen and (max-width:678px) {
+    .slider .list .item .content {
+        padding-right: 0;
+    }
+
+    .slider .list .item .content .title {
+        font-size: 30px;
+    }
+}
+/* Akhir Banner Carousel */
+
+/* Milestone */
+#milestone {
+    background-color: #ff0000;
+    color: white;
+}
+
+#milestone .container .row .col .kotak {
+    color: white;
+}
+/* Akhir Milestone */
+
+
+/* About */
+#about {
+    margin-top: 50px;
+}
+
+#about h2 {
+    color: #ff0000;
+}
+
+#about .row p {
+    text-align: justify;
+}
+
+#about .row button {
+    background-color: #ff0000;
+    color: white;
+}
+
+#about .row button:hover {
+    background-color: #991818;
+    color: white;
+}
+/* Akhir About */
+
+
+/* Weather Information */
+.information .container .row {
+    display: flex;
+    justify-content: center;
+}
+
+.information h1 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.information p {
+    color: #ff0000;
+}
+
+.information p:nth-child(1) {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.information p:nth-child(3) {
+    color: #000
+}
+
+.information .line {
+    width: 100%;
+    height: 2px;
+    background-color: #ff0000;
+}
+
+.information .card {
+    border-radius: 5px;
+    border: none;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+.information .card:hover {
+    background-color: #ff0000;
+    color: white;
+}
+
+.information .card:hover .per1 {
+    color: white;
+}
+/* Akhir Weather Information */
+
+
+/* Image PopUp */
+.port {
+    padding: 3%;
+}
+
+.port .container .row .gallery-item {
+    position: relative;
+    box-shadow: 0 5px 10px 1px rgba(0,0,0,0.5);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.port .container .row .gallery-item img {
+    width: 100%;
+}
+
+.port .container .row .gallery-item .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    text-align: center;
+}
+
+.port .container .row .gallery-item:hover .overlay {
+    opacity: 1;
+}
+
+.port .container .row .gallery-item .overlay h3 {
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.port .container .row .gallery-item .overlay p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.modal {
+    background: rgba(0, 0, 0, 0.8);
+}
+/* Akhir Image PopUp */
+
+
+/* Image */
+.gallery {
+    padding: 20px 0;
+}
+
+.gallery img {
+    background: #ff0000;
+    padding:4px;
+    width: 100%;
+    border-radius: 6px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+    transition: 0.7s;
+    cursor: pointer;
+}
+
+.gallery img:hover {
+    transform: scale(1.1);
+}
+
+.gallery .line {
+    width: 100%;
+    height: 2px;
+    background-color: #ff0000;
+}
+
+#gallery-popup .modal-img {
+    width: 100%;
+}
+
+@media (max-width: 991px) {
+    .gallery-item {
+        margin-bottom: 30px;
+    }
+
+    .webinar .container .row .card {
+        margin-bottom: 30px;
+    }
+}
+/* Akhir Image */
+
+/* Webinar */
+.webinar .line {
+    width: 100%;
+    height: 2px;
+    background-color: #ff0000;
+}
+
+/* Akhir Webinar */
+
