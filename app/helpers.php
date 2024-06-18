@@ -22,3 +22,5 @@ function get_section_data($key)
         return $data;
     }
 }
+
+// Untuk Data Banner

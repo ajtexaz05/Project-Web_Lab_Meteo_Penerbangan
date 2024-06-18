@@ -1,5 +1,24 @@
 @php
+
+  // Untuk Setting
+  $lokasi_data = get_setting_value('_lokasi');
+  $waktu_data = get_setting_value('_waktu');
+  $kalender_data = get_setting_value('_kalender');
+  $windSpeed_data = get_setting_value('_wind_speed');
+  $windDirection_data = get_setting_value('_wind_direction');
+  $humidity_data = get_setting_value('_humidity');
+  $minTemperature_data = get_setting_value('_min_temperature');
+  $temperature_data = get_setting_value('_temperature');
+  $maxTemperature_data = get_setting_value('_max_temperature');
+
+  // Untuk Data Banner
     
+  // Untuk Section
+  $gambarBanner1 = get_section_data('JUMBOTRON1');
+  $gambarBanner2 = get_section_data('JUMBOTRON2');
+  $gambarBanner3 = get_section_data('JUMBOTRON3');
+  $gambarBanner4 = get_section_data('JUMBOTRON4');
+
 @endphp
 
 <!doctype html>
@@ -145,7 +164,7 @@
       <div class="list">
 
         <div class="item">
-          <img src="{{asset('assets/img/img-1.jpg')}}" alt="">
+          <img src="{{ Storage::url($gambarBanner1->thumbnail) }}" alt="">
 
           <div class="content">
             <div class="title shadow-sm">Meteorologi Penerbangan</div>
@@ -160,7 +179,7 @@
         </div>
 
         <div class="item">
-          <img src="{{asset('assets/img/img-2.jpg')}}" alt="">
+          <img src="{{ Storage::url($gambarBanner2->thumbnail) }}" alt="">
 
           <div class="content">
             <div class="title shadow-sm">Meteorologi Penerbangan</div>
@@ -175,7 +194,7 @@
         </div>
 
         <div class="item">
-          <img src="{{asset('assets/img/img-bg.jpg')}}" alt="">
+          <img src="{{ Storage::url($gambarBanner3->thumbnail) }}" alt="">
 
           <div class="content">
             <div class="title shadow-sm">Meteorologi Penerbangan</div>
@@ -190,7 +209,7 @@
         </div>
 
         <div class="item">
-          <img src="{{asset('assets/img/img-airplane.jpg')}}" alt="">
+          <img src="{{ Storage::url($gambarBanner4->thumbnail) }}" alt="">
 
           <div class="content">
             <div class="title shadow-sm">Meteorologi Penerbangan</div>
@@ -210,16 +229,16 @@
       <div class="thumbnail">
 
         <div class="item">
-          <img src="{{asset('assets/img/img-1.jpg')}}" alt="">
+          <img src="{{ Storage::url($gambarBanner1->thumbnail) }}" alt="">
         </div>
         <div class="item">
-          <img src="{{asset('assets/img/img-2.jpg')}}" alt="">
+          <img src="{{ Storage::url($gambarBanner2->thumbnail) }}" alt="">
         </div>
         <div class="item">
-          <img src="{{asset('assets/img/img-bg.jpg')}}" alt="">
+          <img src="{{ Storage::url($gambarBanner3->thumbnail) }}" alt="">
         </div>
         <div class="item">
-          <img src="{{asset('assets/img/img-airplane.jpg')}}" alt="">
+          <img src="{{ Storage::url($gambarBanner4->thumbnail) }}" alt="">
         </div>
 
       </div>
@@ -328,17 +347,17 @@
                   <div class="col-sm-3">
                     <h5 class="head1 py-2">Location</h5>
                     <span><i class="bi bi-geo-alt fs-2"></i></span>
-                    <p class="per1 mt-4">-not now-</p>
+                    <p class="per1 mt-4">{{ $lokasi_data }}</p>
                   </div>
                   <div class="col-sm-3">
                     <h5 class="head1 py-2">Time</h5>
                     <span><i class="bi bi-alarm fs-2"></i></span>
-                    <h2 class="mt-2">07:00</h2>
+                    <h2 class="mt-2">{{ $waktu_data }}</h2>
                   </div>
                   <div class="col-sm-3">
                     <h5 class="py-2">Date</h5>
                     <span><i class="bi bi-calendar-date fs-2"></i></span>
-                    <p class="mt-4">17 - 06 - 2024</p>
+                    <p class="mt-4">{{ $kalender_data }}</p>
                   </div>
                 </div>
               </div>
@@ -351,7 +370,7 @@
               <div class="card-body">
                 <span><i class="bi bi-wind fs-2"></i></span>
                 <h5 class="head1 py-3">Wind Speed</h5>
-                <p class="per1">-not now-</p>
+                <p class="per1">{{ $windSpeed_data }}</p>
               </div>
             </div>
           </div>
@@ -360,7 +379,7 @@
               <div class="card-body">
                 <span><i class="bi bi-compass fs-2"></i></span>
                 <h5 class="head1 py-3">Wind Direction</h5>
-                <p class="per1">-not now-</p>
+                <p class="per1">{{ $windDirection_data }}</p>
               </div>
             </div>
           </div>
@@ -369,7 +388,7 @@
               <div class="card-body">
                 <span><i class="bi bi-droplet fs-2"></i></span>
                 <h5 class="head1 py-3">Humidity</h5>
-                <p class="per1">-not now-</p>
+                <p class="per1">{{ $humidity_data }}</p>
               </div>
             </div>
           </div>
@@ -380,7 +399,7 @@
               <div class="card-body">
                 <span><i class="bi bi-thermometer-low fs-2"></i></span>
                 <h5 class="head1 py-3">Min. Temperature</h5>
-                <p class="per1">-not now-</p>
+                <p class="per1">{{ $minTemperature_data }}</p>
               </div>
             </div>
           </div>
@@ -389,7 +408,7 @@
               <div class="card-body">
                 <span><i class="bi bi-thermometer-half fs-2"></i></span>
                 <h5 class="head1 py-3">Temperature</h5>
-                <p class="per1">-not now-</p>
+                <p class="per1">{{ $temperature_data }}</p>
               </div>
             </div>
           </div>
@@ -398,7 +417,7 @@
               <div class="card-body">
                 <span><i class="bi bi-thermometer-high fs-2"></i></span>
                 <h5 class="head1 py-3">Max. Temperature</h5>
-                <p class="per1">-not now-</p>
+                <p class="per1">{{ $maxTemperature_data }}</p>
               </div>
             </div>
           </div>
