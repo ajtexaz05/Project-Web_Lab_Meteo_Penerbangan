@@ -553,31 +553,31 @@
         <div class="row" style="display: flex; justify-content:center; align-items:center">
           <div class="col-lg-3 col-sm-3">
             <div class="card shadow-lg p-2" style="width: 18rem;">
-              <img src="{{asset('assets/img/webinar-1.jpeg')}}" class="card-img-top" alt="...">
+              <img src="{{asset('assets/img/webinar-1.jpeg')}}" class="card-img-top gallery-webinar" alt="...">
               <div class="card-body">
                 <h5 class="card-title">PROGRAM STORIUM, STORY METEOROGICAL LABORATORY</h5>
                 <p class="card-text">Tema : Dampak Bentuk Garis Pantai Terhadap Curah Hujan Pesisir</p>
-                <a href="#" class="btn" style="background-color: #ff0000; color: white;">Lihat</a>
+                {{-- <a href="#" class="btn" style="background-color: #ff0000; color: white;">Lihat</a> --}}
               </div>
             </div>
           </div>
           <div class="col-lg-3 col-sm-3">
             <div class="card shadow-lg p-2" style="width: 18rem;">
-              <img src="{{asset('assets/img/webinar-2.jpeg')}}" class="card-img-top" alt="...">
+              <img src="{{asset('assets/img/webinar-2.jpeg')}}" class="card-img-top gallery-webinar" alt="...">
               <div class="card-body">
                 <h5 class="card-title">WEBINAR<br>STORIUM<br>#5</h5>
                 <p class="card-text">Tema : SIDARMA : Sistem Integrasi Radar Cuaca Mandiri BMKG</p>
-                <a href="#" class="btn" style="background-color: #ff0000; color: white;">Lihat</a>
+                {{-- <a href="#" class="btn" style="background-color: #ff0000; color: white;">Lihat</a> --}}
               </div>
             </div>
           </div>
           <div class="col-lg-3 col-sm-3">
             <div class="card shadow-lg p-2" style="width: 18rem;">
-              <img src="{{asset('assets/img/webinar-3.jpeg')}}" class="card-img-top" alt="...">
+              <img src="{{asset('assets/img/webinar-3.jpeg')}}" class="card-img-top gallery-webinar" alt="...">
               <div class="card-body">
                 <h5 class="card-title">WEBINAR NEW AVIATION STORIUM<br>#6</h5>
                 <p class="card-text">Layanan Meteorologi Penerbangan : Perspektif Global dan Nasional</p>
-                <a href="#" class="btn" style="background-color: #ff0000; color: white;">Lihat</a>
+                {{-- <a href="#" class="btn" style="background-color: #ff0000; color: white;">Lihat</a> --}}
               </div>
             </div>
           </div>
@@ -585,37 +585,54 @@
         <div class="row mt-5" style="display: flex; justify-content:center; align-items:center">
           <div class="col-lg-3 col-sm-3">
             <div class="card shadow-lg p-2" style="width: 18rem;">
-              <img src="{{asset('assets/img/webinar-4.jpeg')}}" class="card-img-top" alt="...">
+              <img src="{{asset('assets/img/webinar-4.jpeg')}}" class="card-img-top gallery-webinar" alt="...">
               <div class="card-body">
                 <h5 class="card-title">DIBALIK BENCANA HIDROMETEOROLOGI DI WILAYAH INDONESIA, ADA APA?</h5>
                 {{-- <p class="card-text"></p>                   --}}
-                <a href="#" class="btn" style="background-color: #ff0000; color: white;">Lihat</a>
+                {{-- <a href="#" class="btn" style="background-color: #ff0000; color: white;">Lihat</a> --}}
               </div>
             </div>
           </div>
           <div class="col-lg-3 col-sm-3">
             <div class="card shadow-lg p-2" style="width: 18rem;">
-              <img src="{{asset('assets/img/webinar-5.jpeg')}}" class="card-img-top" alt="...">
+              <img src="{{asset('assets/img/webinar-5.jpeg')}}" class="card-img-top gallery-webinar" alt="...">
               <div class="card-body">
                 <h5 class="card-title">WEBINAR NASIONAL</h5>
                 <p class="card-text">Sumut Dilanda Cuaca Ekstrim?<br>Tantangan dan Strategi dalam menghadapinya</p>                  
-                <a href="#" class="btn" style="background-color: #ff0000; color: white;">Lihat</a>
+                {{-- <a href="#" class="btn" style="background-color: #ff0000; color: white;">Lihat</a> --}}
               </div>
             </div>
           </div>
           <div class="col-lg-3 col-sm-3">
             <div class="card shadow-lg p-2" style="width: 18rem;">
-              <img src="{{asset('assets/img/webinar-6.jpeg')}}" class="card-img-top" alt="...">
+              <img src="{{asset('assets/img/webinar-6.jpeg')}}" class="card-img-top gallery-webinar" alt="...">
               <div class="card-body">
                 <h5 class="card-title">INTERNATIONAL CONFERENCE</h5>
                 <p class="card-text"></p>                  
-                <a href="#" class="btn" style="background-color: #ff0000; color: white;">Lihat</a>
+                {{-- <a href="#" class="btn" style="background-color: #ff0000; color: white;">Lihat</a> --}}
               </div>
             </div>
           </div>
         </div>
     </section>
     {{-- Akhir Webinar --}}
+
+    {{-- Modals Webinar --}}
+    <!-- Modal -->
+    <div class="modal fade" id="webinar-popup" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Image Webinar</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <img src="{{asset('assets/img/webinar-6.jpeg')}}" alt="" class="modal-webinar">
+          </div>
+        </div>
+      </div>
+    </div>
+    {{-- Akhir Modals Webinar --}}
 
     {{-- Contact --}}
     <section class="contact-us">
@@ -667,51 +684,51 @@
         <div class="row text-center text-md-left">
           <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
             <h5 class="text-uppercase mb-4 font-weight-bold" style="color: #ff0000">Lab Meteorologi Penerbangan</h5>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam quod sint et repellat unde at, eum quos corporis repellendus debitis.</p>
+            <p style="text-align: justify;">Ini merupakan Website Lab Meteorologi Penerbangan yang bertujuan untuk memberikan data hasil meteorologi penerbangan dan data informasi cuaca kepada masyarakat sebagai bentuk pelayanan dalam bidang meteorologi</p>
           </div>
             <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
-              <h5 class="text-uppercase mb-4 font-weight-bold" style="color: #ff0000">Information Weather</h5>
+              <h5 class="text-uppercase mb-4 font-weight-bold" style="color: #ff0000">Informasi Cuaca Penerbangan</h5>
               <p>
-                <a href="" class="text-white" style="text-decoration: none">Humidity</a>
+                <a href="#weatherInformation" class="text-white" style="text-decoration: none">Humidity</a>
               </p>
               <p>
-                <a href="" class="text-white" style="text-decoration: none">Visibility</a>
+                <a href="#weatherInformation" class="text-white" style="text-decoration: none">Wind Speed</a>
               </p>
               <p>
-                <a href="" class="text-white" style="text-decoration: none">Temperature</a>
+                <a href="#weatherInformation" class="text-white" style="text-decoration: none">Temperature</a>
               </p>
               <p>
-                <a href="" class="text-white" style="text-decoration: none">air Pressure</a>
+                <a href="#weatherInformation" class="text-white" style="text-decoration: none">Wind Direction</a>
               </p>
             </div>
             <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
               <h5 class="text-uppercase mb-4 font-weight-bold" style="color: #ff0000">Tentang</h5>
               <p>
-                <a href="" class="text-white" style="text-decoration: none">Information Weather</a>
+                <a href="#about" class="text-white" style="text-decoration: none">Tentang LAB</a>
               </p>
               <p>
-                <a href="" class="text-white" style="text-decoration: none">Image</a>
+                <a href="#gallery" class="text-white" style="text-decoration: none">Gambar</a>
               </p>
               <p>
-                <a href="" class="text-white" style="text-decoration: none">Webinar</a>
+                <a href="#webinar" class="text-white" style="text-decoration: none">Webinar</a>
               </p>
               <p>
-                <a href="" class="text-white" style="text-decoration: none">Lab Meteorologi Penerbangan</a>
+                <a href="#weatherInformation" class="text-white" style="text-decoration: none">Informasi Cuaca Penerbangan</a>
               </p>
             </div>
             <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
               <h5 class="text-uppercase mb-4 font-weight-bold" style="color: #ff0000">Contact</h5>
               <p>
-                <i class="bi bi-house-door-fill"></i>STMKG, Tanah Tinggi, Tanggerang
+                <i class="bi bi-house-door-fill"></i> STMKG, Tanah Tinggi, Tanggerang
               </p>
               <p>
-                <i class="bi bi-envelope"></i>labMeteo@gmail.com
+                <i class="bi bi-envelope"></i> labMeteo@gmail.com
               </p>
               <p>
-                <i class="bi bi-telephone"></i>+6256474839329
+                <i class="bi bi-telephone"></i> +6256474839329
               </p>
               <p>
-                <i class="bi bi-mailbox"></i>+01  0054 7584
+                <i class="bi bi-mailbox"></i> +01  0054 7584
               </p>
           </div>
         </div>
@@ -755,6 +772,8 @@
 
     {{-- Javascript pengatur Image PopUp --}}
     <script type="text/javascript">
+
+      // Untuk Pop Up Image
       document.addEventListener("click", function(e) {
         if(e.target.classList.contains("gallery-item")) {
           const src = e.target.getAttribute("src");
@@ -763,6 +782,17 @@
           myModal.show();
         }
       })
+
+      // Untuk Pop Up Webinar
+      document.addEventListener("click", function(el) {
+        if(el.target.classList.contains("gallery-webinar")) {
+          const srcnya = el.target.getAttribute("src");
+          document.querySelector(".modal-webinar").src = srcnya;
+          const myModalKu = new bootstrap.Modal(document.getElementById("webinar-popup"));
+          myModalKu.show();
+        }
+      })
+
     </script>
 
     {{-- Box Icon --}}

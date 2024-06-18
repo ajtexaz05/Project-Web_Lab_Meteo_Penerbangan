@@ -547,5 +547,14 @@ img {
     background-color: #ff0000;
 }
 
+.webinar .card {
+    cursor: pointer;
+    transition: 0.8s;
+}
+
+.webinar .card:hover {
+    transform: scale(1.08);
+}
+
 /* Akhir Webinar */
 
