@@ -12,12 +12,13 @@
   $maxTemperature_data = get_setting_value('_max_temperature');
 
   // Untuk Data Banner
+  $data_gambar_lengkap = get_dataBanner();
     
   // Untuk Section
-  $gambarBanner1 = get_section_data('JUMBOTRON1');
-  $gambarBanner2 = get_section_data('JUMBOTRON2');
-  $gambarBanner3 = get_section_data('JUMBOTRON3');
-  $gambarBanner4 = get_section_data('JUMBOTRON4');
+  $Banner1 = get_section_data('JUMBOTRON1');
+  $Banner2 = get_section_data('JUMBOTRON2');
+  $Banner3 = get_section_data('JUMBOTRON3');
+  $Banner4 = get_section_data('JUMBOTRON4');
 
 @endphp
 
@@ -164,61 +165,61 @@
       <div class="list">
 
         <div class="item">
-          <img src="{{ Storage::url($gambarBanner1->thumbnail) }}" alt="">
+          <img src="{{ Storage::url($Banner1->thumbnail) }}" alt="">
 
           <div class="content">
             <div class="title shadow-sm">Meteorologi Penerbangan</div>
-            <div class="type shadow-sm">Laboratorium</div>
+            <div class="type shadow-sm mt-2">{{ $Banner1->title }}</div>
             <div class="description">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam labore nulla repellendus temporibus est, doloremque nobis adipisci quibusdam atque eius? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus, omnis!
+              {!! $Banner1->content !!}
             </div>
             <div class="button">
-              <button>Selengkapnya</button>
+              <a href="#weatherInformation"><button>Selengkapnya</button></a>
             </div>
           </div>
         </div>
 
         <div class="item">
-          <img src="{{ Storage::url($gambarBanner2->thumbnail) }}" alt="">
+          <img src="{{ Storage::url($Banner2->thumbnail) }}" alt="">
 
           <div class="content">
             <div class="title shadow-sm">Meteorologi Penerbangan</div>
-            <div class="type shadow-sm">Info Cuaca</div>
+            <div class="type shadow-sm mt-2">{{ $Banner2->title }}</div>
             <div class="description">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam labore nulla repellendus temporibus est, doloremque nobis adipisci quibusdam atque eius? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus, omnis!
+              {!! $Banner2->content !!}
             </div>
             <div class="button">
-              <button>Selengkapnya</button>
+              <a href="#weatherInformation"><button>Selengkapnya</button></a>
             </div>
           </div>
         </div>
 
         <div class="item">
-          <img src="{{ Storage::url($gambarBanner3->thumbnail) }}" alt="">
+          <img src="{{ Storage::url($Banner3->thumbnail) }}" alt="">
 
           <div class="content">
             <div class="title shadow-sm">Meteorologi Penerbangan</div>
-            <div class="type shadow-sm">LAB</div>
+            <div class="type shadow-sm mt-2">{{ $Banner3->title }}</div>
             <div class="description">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam labore nulla repellendus temporibus est, doloremque nobis adipisci quibusdam atque eius? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus, omnis!
+              {!! $Banner3->content !!}
             </div>
             <div class="button">
-              <button>Selengkapnya</button>
+              <a href="#weatherInformation"><button>Selengkapnya</button></a>
             </div>
           </div>
         </div>
 
         <div class="item">
-          <img src="{{ Storage::url($gambarBanner4->thumbnail) }}" alt="">
+          <img src="{{ Storage::url($Banner4->thumbnail) }}" alt="">
 
           <div class="content">
             <div class="title shadow-sm">Meteorologi Penerbangan</div>
-            <div class="type shadow-sm">Laboratorium</div>
+            <div class="type shadow-sm mt-2">{{ $Banner4->title }}</div>
             <div class="description">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam labore nulla repellendus temporibus est, doloremque nobis adipisci quibusdam atque eius? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus, omnis!
+              {!! $Banner4->content !!}
             </div>
             <div class="button">
-              <button>Selengkapnya</button>
+              <a href="#weatherInformation"><button>Selengkapnya</button></a>
             </div>
           </div>
         </div>
@@ -229,16 +230,16 @@
       <div class="thumbnail">
 
         <div class="item">
-          <img src="{{ Storage::url($gambarBanner1->thumbnail) }}" alt="">
+          <img src="{{ Storage::url($Banner1->thumbnail) }}" alt="">
         </div>
         <div class="item">
-          <img src="{{ Storage::url($gambarBanner2->thumbnail) }}" alt="">
+          <img src="{{ Storage::url($Banner2->thumbnail) }}" alt="">
         </div>
         <div class="item">
-          <img src="{{ Storage::url($gambarBanner3->thumbnail) }}" alt="">
+          <img src="{{ Storage::url($Banner3->thumbnail) }}" alt="">
         </div>
         <div class="item">
-          <img src="{{ Storage::url($gambarBanner4->thumbnail) }}" alt="">
+          <img src="{{ Storage::url($Banner4->thumbnail) }}" alt="">
         </div>
 
       </div>
@@ -440,10 +441,17 @@
         <div class="row" style="display: flex; justify-content:center;">
           <div class="col-lg-4 col-sm-12">
             <div class="gallery-item" data-bs-toggle="modal" data-bs-target="#popup1">
-              <img src="{{asset('assets/img/img-3.jpg')}}" alt="">
+
+              @foreach ($data_gambar_lengkap as $item)
+                <img src="{{Storage::url($item->thumbnail)}}" alt=""> 
+              @endforeach
+
               <div class="overlay">
-                <h3>Data Meteorologi Penerbangan</h3>
-                <p>Merupakan data meteorologi penerbangan yang dikeluarkan oleh STMKG</p>
+              @foreach ($data_gambar_lengkap as $item)
+                <h3>{{($item->title)}}</h3>
+                <p>{!!($item->content)!!}</p>   
+              @endforeach
+
                 <a href="#" class="btn" style="background-color: #ff0000; color:white">Selengkapnya</a>
               </div>
             </div>
@@ -456,7 +464,11 @@
     <div class="modal fade" id="popup1">
       <div class="modal-dialog modal-dialog-centered modal-lg">
         <div class="modal-content">
-          <img src="{{asset('assets/img/img-3.jpg')}}" alt="" width="80%">
+
+          @foreach ($data_gambar_lengkap as $item)
+            <img src="{{Storage::url($item->thumbnail)}}" alt="" width="90%"> 
+          @endforeach
+
         </div>
       </div>
     </div>
@@ -545,7 +557,7 @@
               <div class="card-body">
                 <h5 class="card-title">PROGRAM STORIUM, STORY METEOROGICAL LABORATORY</h5>
                 <p class="card-text">Tema : Dampak Bentuk Garis Pantai Terhadap Curah Hujan Pesisir</p>
-                <a href="#" class="btn" style="background-color: #ff0000; color: white;">Selengkapnya</a>
+                <a href="#" class="btn" style="background-color: #ff0000; color: white;">Lihat</a>
               </div>
             </div>
           </div>
@@ -555,7 +567,7 @@
               <div class="card-body">
                 <h5 class="card-title">WEBINAR<br>STORIUM<br>#5</h5>
                 <p class="card-text">Tema : SIDARMA : Sistem Integrasi Radar Cuaca Mandiri BMKG</p>
-                <a href="#" class="btn" style="background-color: #ff0000; color: white;">Selengkapnya</a>
+                <a href="#" class="btn" style="background-color: #ff0000; color: white;">Lihat</a>
               </div>
             </div>
           </div>
@@ -565,7 +577,7 @@
               <div class="card-body">
                 <h5 class="card-title">WEBINAR NEW AVIATION STORIUM<br>#6</h5>
                 <p class="card-text">Layanan Meteorologi Penerbangan : Perspektif Global dan Nasional</p>
-                <a href="#" class="btn" style="background-color: #ff0000; color: white;">Selengkapnya</a>
+                <a href="#" class="btn" style="background-color: #ff0000; color: white;">Lihat</a>
               </div>
             </div>
           </div>
@@ -577,7 +589,7 @@
               <div class="card-body">
                 <h5 class="card-title">DIBALIK BENCANA HIDROMETEOROLOGI DI WILAYAH INDONESIA, ADA APA?</h5>
                 {{-- <p class="card-text"></p>                   --}}
-                <a href="#" class="btn" style="background-color: #ff0000; color: white;">Selengkapnya</a>
+                <a href="#" class="btn" style="background-color: #ff0000; color: white;">Lihat</a>
               </div>
             </div>
           </div>
@@ -587,7 +599,7 @@
               <div class="card-body">
                 <h5 class="card-title">WEBINAR NASIONAL</h5>
                 <p class="card-text">Sumut Dilanda Cuaca Ekstrim?<br>Tantangan dan Strategi dalam menghadapinya</p>                  
-                <a href="#" class="btn" style="background-color: #ff0000; color: white;">Selengkapnya</a>
+                <a href="#" class="btn" style="background-color: #ff0000; color: white;">Lihat</a>
               </div>
             </div>
           </div>
@@ -597,7 +609,7 @@
               <div class="card-body">
                 <h5 class="card-title">INTERNATIONAL CONFERENCE</h5>
                 <p class="card-text"></p>                  
-                <a href="#" class="btn" style="background-color: #ff0000; color: white;">Selengkapnya</a>
+                <a href="#" class="btn" style="background-color: #ff0000; color: white;">Lihat</a>
               </div>
             </div>
           </div>

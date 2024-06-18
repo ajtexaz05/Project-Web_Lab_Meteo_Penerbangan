@@ -1,5 +1,6 @@
 <?php
 
+use App\Models\dataBanner;
 use App\Models\section;
 use App\Models\setting;
 
@@ -24,3 +25,8 @@ function get_section_data($key)
 }
 
 // Untuk Data Banner
+function get_dataBanner()
+{
+    $data = dataBanner::all();
+    return $data;
+}
