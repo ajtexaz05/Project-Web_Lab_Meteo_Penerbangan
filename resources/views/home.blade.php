@@ -271,7 +271,7 @@
                 <p class="card-text">
                   <i class="bi bi-wind fs-2"></i>
                 </p>
-                <a href="#" class="btn tombol-selengkapnya" style="background-color: #ff0000; color:white;">Selengkapnya</a>
+                <a href="#weatherInformation" class="btn tombol-selengkapnya" style="background-color: #ff0000; color:white;">Selengkapnya</a>
               </div>
             </div>
           </div>
@@ -282,7 +282,7 @@
                 <p class="card-text">
                   <i class="bi bi-droplet fs-2"></i>
                 </p>
-                <a href="#" class="btn" style="background-color: #ff0000; color:white;">Selengkapnya</a>
+                <a href="#weatherInformation" class="btn" style="background-color: #ff0000; color:white;">Selengkapnya</a>
               </div>
             </div>
           </div>
@@ -293,7 +293,7 @@
                 <p class="card-text">
                   <i class="bi bi-compass fs-2"></i>
                 </p>
-                <a href="#" class="btn" style="background-color: #ff0000; color:white;">Selengkapnya</a>
+                <a href="#weatherInformation" class="btn" style="background-color: #ff0000; color:white;">Selengkapnya</a>
               </div>
             </div>
           </div>
@@ -304,7 +304,7 @@
                 <p>
                   <i class="bi bi-thermometer-sun fs-2"></i>
                 </p>
-                <a href="#" class="btn" style="background-color: #ff0000; color:white;">Selengkapnya</a>
+                <a href="#weatherInformation" class="btn" style="background-color: #ff0000; color:white;">Selengkapnya</a>
               </div>
             </div>
           </div>
@@ -702,7 +702,7 @@
         <div class="row text-center text-md-left">
           <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
             <h5 class="text-uppercase mb-4 font-weight-bold" style="color: #ff0000">Lab Meteorologi Penerbangan</h5>
-            <p style="text-align: justify;">Ini merupakan Website Lab Meteorologi Penerbangan yang bertujuan untuk memberikan data hasil meteorologi penerbangan dan data informasi cuaca kepada masyarakat sebagai bentuk pelayanan dalam bidang meteorologi</p>
+            <p style="text-align: justify;">{!! $Banner1->content !!}</p>
           </div>
             <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
               <h5 class="text-uppercase mb-4 font-weight-bold" style="color: #ff0000">Informasi Cuaca Penerbangan</h5>
@@ -756,7 +756,7 @@
         <div class="row align-items-center">
           <div class="col-md-7 col-lg-8">
             <p style="font-size: 14px;">@2024 Created By : 
-              <strong><a href="" style="text-decoration: none; color:#ff0000;">Marianus Carol Jehadun</a></strong>
+              <strong><a href="https://www.instagram.com/arijehadun/" target="blank" style="text-decoration: none; color:#ff0000;">Marianus Carol Jehadun</a></strong>
             </p>
           </div>
           <div class="col-md-5 col-lg-4">
