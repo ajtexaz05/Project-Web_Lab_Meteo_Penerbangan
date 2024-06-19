@@ -369,6 +369,11 @@ img {
 #milestone .container .row .col .kotak {
     color: white;
 }
+
+.milestone .container .row .col .card .card-body a:hover {
+    background-color: #991818;
+    color: white;
+}
 /* Akhir Milestone */
 
 

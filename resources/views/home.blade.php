@@ -19,6 +19,7 @@
   $Banner2 = get_section_data('JUMBOTRON2');
   $Banner3 = get_section_data('JUMBOTRON3');
   $Banner4 = get_section_data('JUMBOTRON4');
+  $TentangAbout = get_section_data('ABOUT');
 
 @endphp
 
@@ -100,8 +101,8 @@
                       padding: 9px 24px;
                       background-color: #ff0000;
                       color: white;
-                      border-color: #ff0000;
-          " data-bs-toggle="modal" data-bs-target="#staticBackdrop">Kontak Kami</a>
+                      border-color: #ff0000;" 
+              data-bs-toggle="modal" data-bs-target="#staticBackdrop">Kontak Kami</a>
         </div>
       </div>
     </nav>
@@ -121,7 +122,7 @@
                 <div class="col-lg-4">
                   <img src="{{asset('assets/img/img-8.jpg')}}" alt="">
                   <h3 style="color: #ff0000">Kontak Kami</h3>
-                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus sit vero maiores soluta consequatur dolores incidunt deserunt corporis repellat. Corrupti!</p>
+                  <p>Anda bisa menghubungi kami di sini</p>
                 </div>
                 <div class="col-lg-8">
                   <div class="row">
@@ -266,44 +267,44 @@
           <div class="col-sm-3">
             <div class="card shadow p-3 mb-5 bg-body rounded">
               <div class="card-body text-center">
-                <h5 class="card-title">Cuaca</h5>
-                <p class="card-text">
-                  <i class="bi bi-cloud-sun-fill fs-2"></i>
-                </p>
-                <a href="#" class="btn btn-primary">Selengkapnya</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-3">
-            <div class="card shadow p-3 mb-5 bg-body rounded">
-              <div class="card-body text-center">
-                <h5 class="card-title">Kelembapan</h5>
-                <p class="card-text">
-                  <i class="bi bi-droplet fs-2"></i>
-                </p>
-                <a href="#" class="btn btn-primary">Selengkapnya</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-3">
-            <div class="card shadow p-3 mb-5 bg-body rounded">
-              <div class="card-body text-center">
-                <h5 class="card-title">Arah Angin</h5>
+                <h5 class="card-title">Wind Speed</h5>
                 <p class="card-text">
                   <i class="bi bi-wind fs-2"></i>
                 </p>
-                <a href="#" class="btn btn-primary">Selengkapnya</a>
+                <a href="#" class="btn tombol-selengkapnya" style="background-color: #ff0000; color:white;">Selengkapnya</a>
               </div>
             </div>
           </div>
           <div class="col-sm-3">
             <div class="card shadow p-3 mb-5 bg-body rounded">
               <div class="card-body text-center">
-                <h5 class="card-title">Temperatur</h5>
+                <h5 class="card-title">Humidity</h5>
+                <p class="card-text">
+                  <i class="bi bi-droplet fs-2"></i>
+                </p>
+                <a href="#" class="btn" style="background-color: #ff0000; color:white;">Selengkapnya</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <div class="card shadow p-3 mb-5 bg-body rounded">
+              <div class="card-body text-center">
+                <h5 class="card-title">Wind Direction</h5>
+                <p class="card-text">
+                  <i class="bi bi-compass fs-2"></i>
+                </p>
+                <a href="#" class="btn" style="background-color: #ff0000; color:white;">Selengkapnya</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <div class="card shadow p-3 mb-5 bg-body rounded">
+              <div class="card-body text-center">
+                <h5 class="card-title">Temperature</h5>
                 <p>
                   <i class="bi bi-thermometer-sun fs-2"></i>
                 </p>
-                <a href="#" class="btn btn-primary">Selengkapnya</a>
+                <a href="#" class="btn" style="background-color: #ff0000; color:white;">Selengkapnya</a>
               </div>
             </div>
           </div>
@@ -317,17 +318,34 @@
      <section class="container py-5 mt-4" id="about">
       <div class="row g-6">
         <div class="col-12 col-lg-6 mt-3">
-          <img src="{{asset('assets/img/img-cover.jpeg')}}" alt="" class="img-fluid">
+          <img src="{{ Storage::url($TentangAbout->thumbnail) }}" alt="" class="img-fluid">
         </div>
         <div class="col-12 col-lg-6 mt-3">
-          <h2 class="">Tentang LAB Ini</h2>
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo esse odit blanditiis provident voluptatum illo corrupti fugit fugiat eveniet quos vero, id saepe cupiditate minima illum quisquam hic consequatur. Eos omnis incidunt similique explicabo quos non culpa minus, quam quibusdam tenetur, harum sunt voluptate laborum voluptatem ad corrupti voluptatibus voluptas!</p>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, recusandae dolorum minima quas perferendis blanditiis id maiores quaerat enim officiis? Porro ea, exercitationem aperiam vel, impedit minima laboriosam quod sit magnam repudiandae, autem consequuntur vitae expedita! Neque incidunt natus asperiores excepturi voluptatum, ratione assumenda quas sunt architecto ab autem voluptate nobis. Laboriosam labore, aperiam nemo facilis vitae, ipsum necessitatibus, libero fuga similique pariatur deserunt quas.</p>
-          <button class="btn px-5 py-3 d-inline-block fs-6 fw-bold">Selengkapnya</button>
+          <h2 class="">{!! $TentangAbout->title !!}</h2>
+          <p>{!! $TentangAbout->content !!}</p>
+          <button class="btn px-5 py-3 d-inline-block fs-6 fw-bold" data-bs-toggle="modal" data-bs-target="#modalAbout">Selengkapnya</button>
         </div>
       </div>
     </section>
     {{-- Akhir About --}}
+    
+    {{-- Modal About --}}
+    <div class="modal fade" id="modalAbout" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="container-fluid">
+              <img src="{{ Storage::url($TentangAbout->thumbnail) }}" alt="" class="img-fluid">
+              <p>{!! $TentangAbout->content !!}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    {{-- Akhir Modal About --}}
 
     {{-- Weather Information --}}
     <section class="information py-5 bg-light text-center" id="weatherInformation">
@@ -400,7 +418,7 @@
               <div class="card-body">
                 <span><i class="bi bi-thermometer-low fs-2"></i></span>
                 <h5 class="head1 py-3">Min. Temperature</h5>
-                <p class="per1">{{ $minTemperature_data }}</p>
+                <p class="per1">{{ $minTemperature_data }}&deg;C</p>
               </div>
             </div>
           </div>
@@ -409,7 +427,7 @@
               <div class="card-body">
                 <span><i class="bi bi-thermometer-half fs-2"></i></span>
                 <h5 class="head1 py-3">Temperature</h5>
-                <p class="per1">{{ $temperature_data }}</p>
+                <p class="per1">{{ $temperature_data }}&deg;C</p>
               </div>
             </div>
           </div>
@@ -418,7 +436,7 @@
               <div class="card-body">
                 <span><i class="bi bi-thermometer-high fs-2"></i></span>
                 <h5 class="head1 py-3">Max. Temperature</h5>
-                <p class="per1">{{ $maxTemperature_data }}</p>
+                <p class="per1">{{ $maxTemperature_data }}&deg;C</p>
               </div>
             </div>
           </div>
@@ -487,13 +505,13 @@
         </div>
         <div class="row" style="display: flex; justify-content:center; align-items:center;">
           <div class="col-lg-3">
-            <img src="{{asset('assets/img/img-4.jpg')}}" alt="" class="gallery-item">
+            <img src="{{asset('assets/img/img-3.jpg')}}" alt="" class="gallery-item">
           </div>
           <div class="col-lg-3">
             <img src="{{asset('assets/img/img-5.jpg')}}" alt="" class="gallery-item">
           </div>
           <div class="col-lg-3">
-            <img src="{{asset('assets/img/img-6.jpg')}}" alt="" class="gallery-item">
+            <img src="{{asset('assets/img/img-2.jpg')}}" alt="" class="gallery-item">
           </div>
         </div>
         <div class="row mt-4" style="display: flex; justify-content:center; align-items:center;">
@@ -501,18 +519,18 @@
             <img src="{{asset('assets/img/img-8.jpg')}}" alt="" class="gallery-item">
           </div>
           <div class="col-sm-3">
-            <img src="{{asset('assets/img/img-9.jpg')}}" alt="" class="gallery-item">
+            <img src="{{asset('assets/img/img-4.jpg')}}" alt="" class="gallery-item">
           </div>
           <div class="col-sm-3">
-            <img src="{{asset('assets/img/img-10.jpg')}}" alt="" class="gallery-item">
+            <img src="{{asset('assets/img/img-6.jpg')}}" alt="" class="gallery-item">
           </div>
         </div>
         <div class="row mt-4" style="display: flex; justify-content:center; align-items:center;">
           <div class="col-sm-3">
-            <img src="{{asset('assets/img/img-12.jpg')}}" alt="" class="gallery-item">
+            <img src="{{asset('assets/img/img-13.jpg')}}" alt="" class="gallery-item">
           </div>
           <div class="col-sm-3">
-            <img src="{{asset('assets/img/img-13.jpg')}}" alt="" class="gallery-item">
+            <img src="{{asset('assets/img/img-12.jpg')}}" alt="" class="gallery-item">
           </div>
           <div class="col-sm-3">
             <img src="{{asset('assets/img/img-1.jpg')}}" alt="" class="gallery-item">
@@ -722,13 +740,13 @@
                 <i class="bi bi-house-door-fill"></i> STMKG, Tanah Tinggi, Tanggerang
               </p>
               <p>
-                <i class="bi bi-envelope"></i> labMeteo@gmail.com
+                <i class="bi bi-envelope"></i> -- Not Now --
               </p>
               <p>
-                <i class="bi bi-telephone"></i> +6256474839329
+                <i class="bi bi-telephone"></i> -- Not Now --
               </p>
               <p>
-                <i class="bi bi-mailbox"></i> +01  0054 7584
+                <i class="bi bi-instagram"></i> -- Not Now --
               </p>
           </div>
         </div>
@@ -737,8 +755,8 @@
 
         <div class="row align-items-center">
           <div class="col-md-7 col-lg-8">
-            <p>Copyright @2024 All rights reserved by:
-              <strong><a href="" style="text-decoration: none; color:#ff0000;">Ari Jehadun</a></strong>
+            <p style="font-size: 14px;">@2024 Created By : 
+              <strong><a href="" style="text-decoration: none; color:#ff0000;">Marianus Carol Jehadun</a></strong>
             </p>
           </div>
           <div class="col-md-5 col-lg-4">
