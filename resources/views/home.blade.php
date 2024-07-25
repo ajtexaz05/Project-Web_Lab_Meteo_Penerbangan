@@ -120,7 +120,7 @@
             <div class="container-fluid">
               <div class="row">
                 <div class="col-lg-4">
-                  <img src="{{asset('assets/img/img-8.jpg')}}" alt="">
+                  <img src="{{asset('assets/img/img-8.JPG')}}" alt="">
                   <h3 style="color: #ff0000">Kontak Kami</h3>
                   <p>Anda bisa menghubungi kami di sini</p>
                 </div>
@@ -508,7 +508,7 @@
             <img src="{{asset('assets/img/img-3.jpg')}}" alt="" class="gallery-item">
           </div>
           <div class="col-lg-3">
-            <img src="{{asset('assets/img/img-5.jpg')}}" alt="" class="gallery-item">
+            <img src="{{asset('assets/img/img-5.JPG')}}" alt="" class="gallery-item">
           </div>
           <div class="col-lg-3">
             <img src="{{asset('assets/img/img-2.jpg')}}" alt="" class="gallery-item">
@@ -516,21 +516,21 @@
         </div>
         <div class="row mt-4" style="display: flex; justify-content:center; align-items:center;">
           <div class="col-sm-3">
-            <img src="{{asset('assets/img/img-8.jpg')}}" alt="" class="gallery-item">
+            <img src="{{asset('assets/img/img-8.JPG')}}" alt="" class="gallery-item">
           </div>
           <div class="col-sm-3">
-            <img src="{{asset('assets/img/img-4.jpg')}}" alt="" class="gallery-item">
+            <img src="{{asset('assets/img/img-4.JPG')}}" alt="" class="gallery-item">
           </div>
           <div class="col-sm-3">
-            <img src="{{asset('assets/img/img-6.jpg')}}" alt="" class="gallery-item">
+            <img src="{{asset('assets/img/img-6.JPG')}}" alt="" class="gallery-item">
           </div>
         </div>
         <div class="row mt-4" style="display: flex; justify-content:center; align-items:center;">
           <div class="col-sm-3">
-            <img src="{{asset('assets/img/img-13.jpg')}}" alt="" class="gallery-item">
+            <img src="{{asset('assets/img/img-13.JPG')}}" alt="" class="gallery-item">
           </div>
           <div class="col-sm-3">
-            <img src="{{asset('assets/img/img-12.jpg')}}" alt="" class="gallery-item">
+            <img src="{{asset('assets/img/img-12.JPG')}}" alt="" class="gallery-item">
           </div>
           <div class="col-sm-3">
             <img src="{{asset('assets/img/img-1.jpg')}}" alt="" class="gallery-item">
@@ -550,7 +550,7 @@
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <div class="modal-body">
-            <img src="{{asset('assets/img/img-4.jpg')}}" alt="" class="modal-img">
+            <img src="{{asset('assets/img/img-4.JPG')}}" alt="" class="modal-img">
           </div>
         </div>
       </div>
@@ -571,7 +571,7 @@
         <div class="row" style="display: flex; justify-content:center; align-items:center">
           <div class="col-lg-3 col-sm-3">
             <div class="card shadow-lg p-2" style="width: 18rem;">
-              <img src="{{asset('assets/img/webinar-1.jpeg')}}" class="card-img-top gallery-webinar" alt="...">
+              <img src="{{asset('assets/img/Webinar-1.jpeg')}}" class="card-img-top gallery-webinar" alt="...">
               <div class="card-body">
                 <h5 class="card-title">PROGRAM STORIUM, STORY METEOROGICAL LABORATORY</h5>
                 <p class="card-text">Tema : Dampak Bentuk Garis Pantai Terhadap Curah Hujan Pesisir</p>
@@ -581,7 +581,7 @@
           </div>
           <div class="col-lg-3 col-sm-3">
             <div class="card shadow-lg p-2" style="width: 18rem;">
-              <img src="{{asset('assets/img/webinar-2.jpeg')}}" class="card-img-top gallery-webinar" alt="...">
+              <img src="{{asset('assets/img/Webinar-2.jpeg')}}" class="card-img-top gallery-webinar" alt="...">
               <div class="card-body">
                 <h5 class="card-title">WEBINAR<br>STORIUM<br>#5</h5>
                 <p class="card-text">Tema : SIDARMA : Sistem Integrasi Radar Cuaca Mandiri BMKG</p>
@@ -591,7 +591,7 @@
           </div>
           <div class="col-lg-3 col-sm-3">
             <div class="card shadow-lg p-2" style="width: 18rem;">
-              <img src="{{asset('assets/img/webinar-3.jpeg')}}" class="card-img-top gallery-webinar" alt="...">
+              <img src="{{asset('assets/img/Webinar-3.jpeg')}}" class="card-img-top gallery-webinar" alt="...">
               <div class="card-body">
                 <h5 class="card-title">WEBINAR NEW AVIATION STORIUM<br>#6</h5>
                 <p class="card-text">Layanan Meteorologi Penerbangan : Perspektif Global dan Nasional</p>
@@ -603,7 +603,7 @@
         <div class="row mt-5" style="display: flex; justify-content:center; align-items:center">
           <div class="col-lg-3 col-sm-3">
             <div class="card shadow-lg p-2" style="width: 18rem;">
-              <img src="{{asset('assets/img/webinar-4.jpeg')}}" class="card-img-top gallery-webinar" alt="...">
+              <img src="{{asset('assets/img/Webinar-4.jpeg')}}" class="card-img-top gallery-webinar" alt="...">
               <div class="card-body">
                 <h5 class="card-title">DIBALIK BENCANA HIDROMETEOROLOGI DI WILAYAH INDONESIA, ADA APA?</h5>
                 {{-- <p class="card-text"></p>                   --}}
@@ -613,7 +613,7 @@
           </div>
           <div class="col-lg-3 col-sm-3">
             <div class="card shadow-lg p-2" style="width: 18rem;">
-              <img src="{{asset('assets/img/webinar-5.jpeg')}}" class="card-img-top gallery-webinar" alt="...">
+              <img src="{{asset('assets/img/Webinar-5.jpeg')}}" class="card-img-top gallery-webinar" alt="...">
               <div class="card-body">
                 <h5 class="card-title">WEBINAR NASIONAL</h5>
                 <p class="card-text">Sumut Dilanda Cuaca Ekstrim?<br>Tantangan dan Strategi dalam menghadapinya</p>                  
@@ -623,7 +623,7 @@
           </div>
           <div class="col-lg-3 col-sm-3">
             <div class="card shadow-lg p-2" style="width: 18rem;">
-              <img src="{{asset('assets/img/webinar-6.jpeg')}}" class="card-img-top gallery-webinar" alt="...">
+              <img src="{{asset('assets/img/Webinar-6.jpeg')}}" class="card-img-top gallery-webinar" alt="...">
               <div class="card-body">
                 <h5 class="card-title">INTERNATIONAL CONFERENCE</h5>
                 <p class="card-text"></p>                  
@@ -645,7 +645,7 @@
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <div class="modal-body">
-            <img src="{{asset('assets/img/webinar-6.jpeg')}}" alt="" class="modal-webinar">
+            <img src="{{asset('assets/img/Webinar-6.jpeg')}}" alt="" class="modal-webinar">
           </div>
         </div>
       </div>
@@ -688,7 +688,7 @@
           </div>
           <div class="col-md-5 bg-light p-4 ml-2 shadow-sm" style="display: flex; justify-content:center; align-items:center; border-radius:5px;">
             <div class="">
-              <img src="{{asset('assets/img/img-8.jpg')}}" alt="" class="img-fluid" style="border-radius: 5px; ">
+              <img src="{{asset('assets/img/img-8.JPG')}}" alt="" class="img-fluid" style="border-radius: 5px; ">
             </div>
           </div>
         </div>
