@@ -1,13 +1,13 @@
 <?php
 
-use App\Models\dataBanner;
-use App\Models\section;
-use App\Models\setting;
+use App\Models\DataBanner;
+use App\Models\Section;
+use App\Models\Setting;
 
 // Untuk Setting
 function get_setting_value($key)
 {
-    $data = setting::where('key', $key)->first();
+    $data = Setting::where('key', $key)->first();
     if (isset($data->value)) {
         return $data->value;
     } else {
@@ -18,7 +18,7 @@ function get_setting_value($key)
 // Untuk Section
 function get_section_data($key)
 {
-    $data = section::where('post_as', $key)->first();
+    $data = Section::where('post_as', $key)->first();
     if (isset($data)) {
         return $data;
     }
@@ -27,6 +27,6 @@ function get_section_data($key)
 // Untuk Data Banner
 function get_dataBanner()
 {
-    $data = dataBanner::all();
+    $data = DataBanner::all();
     return $data;
 }

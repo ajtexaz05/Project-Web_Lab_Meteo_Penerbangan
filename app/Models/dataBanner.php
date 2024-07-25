@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 
-class dataBanner extends Model
+class DataBanner extends Model
 {
     use HasFactory;
     protected $fillable = ['title', 'thumbnail', 'content'];
