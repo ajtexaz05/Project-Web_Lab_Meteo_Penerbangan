@@ -357,6 +357,15 @@ img {
     .slider .list .item .content .title {
         font-size: 30px;
     }
+
+    .slider .list .item .content .type {
+        font-size: 38px;
+    }
+
+    .slider .thumbnail {
+        z-index: unset;
+    }
+
 }
 /* Akhir Banner Carousel */
 
