@@ -355,7 +355,7 @@
             <p>Informasi</p>
             <h1>Informasi Cuaca</h1>
             <div class="line my-4"></div>
-            <p style="color: black">Data Cuaca penerbangan yang sangat berguna untuk data penerbangan dan merupakan data dari LAB METEOROLOGI PENERBANGAN STMKG</p>
+            <p style="color: black">Informasi Prakiraan Cuaca yang berlaku esok hari</p>
           </div>
         </div>
         <div class="row">
@@ -568,7 +568,41 @@
             <p style="color: black">Kumpulan Webinar</p>
           </div>
         </div>
-        <div class="row" style="display: flex; justify-content:center; align-items:center">
+        {{-- Baris ke 1 --}}
+        <div class="row mt-5" style="display: flex; justify-content:center; align-items:center">
+          <div class="col-lg-3 col-sm-3">
+            <div class="card shadow-lg p-2" style="width: 18rem;">
+              <img src="{{asset('assets/img/Webinar-7.jpeg')}}" class="card-img-top gallery-webinar" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">PROGRAM STORIUM<br>STORY METEOROGICAL LABORATORY</h5>
+                <p class="card-text">Tema 1 : TEKNOLOGI PRAKIRAAN CUACA BMKG</p>
+                {{-- <a href="#" class="btn" style="background-color: #ff0000; color: white;">Lihat</a> --}}
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-3">
+            <div class="card shadow-lg p-2" style="width: 18rem;">
+              <img src="{{asset('assets/img/Webinar-8.jpeg')}}" class="card-img-top gallery-webinar" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">PROGRAM STORIUM<br>STORY METEOROGICAL LABORATORY</h5>
+                <p class="card-text">Tema 2 : PERKEMBANGAN EL NINO DAN MUSIM HUJAN</p>                 
+                {{-- <a href="#" class="btn" style="background-color: #ff0000; color: white;">Lihat</a> --}}
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-3">
+            <div class="card shadow-lg p-2" style="width: 18rem;">
+              <img src="{{asset('assets/img/Webinar-9.jpeg')}}" class="card-img-top gallery-webinar" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">PROGRAM STORIUM<br>STORY METEOROGICAL LABORATORY</h5>
+                <p class="card-text">Tema 3 : MENITI KISAH LABORATORIUM WCPL ITB</p>                  
+                {{-- <a href="#" class="btn" style="background-color: #ff0000; color: white;">Lihat</a> --}}
+              </div>
+            </div>
+          </div>
+        </div>
+        {{-- Baris ke 2 --}}
+        <div class="row mt-5" style="display: flex; justify-content:center; align-items:center">
           <div class="col-lg-3 col-sm-3">
             <div class="card shadow-lg p-2" style="width: 18rem;">
               <img src="{{asset('assets/img/Webinar-1.jpeg')}}" class="card-img-top gallery-webinar" alt="...">
@@ -600,6 +634,7 @@
             </div>
           </div>
         </div>
+        {{-- Baris ke 3 --}}
         <div class="row mt-5" style="display: flex; justify-content:center; align-items:center">
           <div class="col-lg-3 col-sm-3">
             <div class="card shadow-lg p-2" style="width: 18rem;">
