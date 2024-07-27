@@ -148,6 +148,7 @@ img {
     color: white;
     background-color: black;
     border-radius: 6px;
+    padding: 8px;
 }
 
 .slider .list .item .content .button {
@@ -163,7 +164,7 @@ img {
     cursor: pointer;
     letter-spacing: 2px;
     transition: 0.4s;
-    border-radius: 7px;
+    border-radius: 4px;
 }
 
 .slider .list .item .content .button button:hover {
@@ -175,7 +176,7 @@ img {
     display: flex;
     gap: 20px;
     position: absolute;
-    bottom: 120px;
+    bottom: 95px;
     left: 50%;
     width: max-content;
     z-index: 100;
@@ -183,7 +184,7 @@ img {
 
 .thumbnail .item {
     width: 150px;
-    height: 210px;
+    height: 205px;
     flex-shrink: 0;
     position: relative;
 }
@@ -350,6 +351,13 @@ img {
 }
 
 @media screen and (max-width:678px) {
+
+    .nextPrevArrows {
+        position: absolute;
+        top: 93%;
+        right: 52%;
+    }
+
     .slider .list .item .content {
         padding-right: 0;
     }
