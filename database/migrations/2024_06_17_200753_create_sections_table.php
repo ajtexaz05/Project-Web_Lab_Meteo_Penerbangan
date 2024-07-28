@@ -16,7 +16,7 @@ return new class extends Migration
             $table->string('title'); // untuk judulnya
             $table->string('thumbnail'); // untuk gambarnya 
             $table->longText('content'); // untuk data paragraf penjelasannya
-            $table->enum('post_as', ['JUMBOTRON1', 'JUMBOTRON2', 'JUMBOTRON3', 'JUMBOTRON4', 'ABOUT'])->nullable();
+            $table->enum('post_as', ['JUMBOTRON1', 'JUMBOTRON2', 'JUMBOTRON3', 'JUMBOTRON4', 'ABOUT'])->nullable(); // Penanda
             $table->timestamps();
         });
     }

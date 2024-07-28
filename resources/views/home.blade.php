@@ -361,6 +361,7 @@
         <div class="row">
           <div class="col-lg-9 mt-2 mb-2">
             <div class="card py-3 shadow-sm">
+              <i class="bi bi-circle-fill" style="color: rgb(96, 246, 96); font-size:11px;"> Aktif</i>
               <div class="card-body">
                 <div class="row">
                   <div class="col-sm-3">
@@ -386,6 +387,7 @@
         <div class="row">
           <div class="col-lg-3 mt-2 mb-2">
             <div class="card py-3 shadow-sm">
+              <i class="bi bi-circle-fill" style="color: rgb(96, 246, 96); font-size:11px;"> Aktif</i>
               <div class="card-body">
                 <span><i class="bi bi-wind fs-2"></i></span>
                 <h5 class="head1 py-3">Wind Speed</h5>
@@ -395,6 +397,7 @@
           </div>
           <div class="col-lg-3 mt-2 mb-2">
             <div class="card py-3 shadow-sm">
+              <i class="bi bi-circle-fill" style="color: rgb(96, 246, 96); font-size:11px;"> Aktif</i>
               <div class="card-body">
                 <span><i class="bi bi-compass fs-2"></i></span>
                 <h5 class="head1 py-3">Wind Direction</h5>
@@ -404,6 +407,7 @@
           </div>
           <div class="col-lg-3 mt-2 mb-2">
             <div class="card py-3 shadow-sm">
+              <i class="bi bi-circle-fill" style="color: rgb(96, 246, 96); font-size:11px;"> Aktif</i>
               <div class="card-body">
                 <span><i class="bi bi-droplet fs-2"></i></span>
                 <h5 class="head1 py-3">Humidity</h5>
@@ -415,6 +419,7 @@
         <div class="row">
           <div class="col-lg-3 mt-2 mb-2">
             <div class="card py-3 shadow-sm">
+              <i class="bi bi-circle-fill" style="color: rgb(96, 246, 96); font-size:11px;"> Aktif</i>
               <div class="card-body">
                 <span><i class="bi bi-thermometer-low fs-2"></i></span>
                 <h5 class="head1 py-3">Min. Temperature</h5>
@@ -424,6 +429,7 @@
           </div>
           <div class="col-lg-3 mt-2 mb-2">
             <div class="card py-3 shadow-sm">
+              <i class="bi bi-circle-fill" style="color: rgb(96, 246, 96); font-size:11px;"> Aktif</i>
               <div class="card-body">
                 <span><i class="bi bi-thermometer-half fs-2"></i></span>
                 <h5 class="head1 py-3">Temperature</h5>
@@ -433,6 +439,7 @@
           </div>
           <div class="col-lg-3 mt-2 mb-2">
             <div class="card py-3 shadow-sm">
+              <i class="bi bi-circle-fill" style="color: rgb(96, 246, 96); font-size:11px;"> Aktif</i>
               <div class="card-body">
                 <span><i class="bi bi-thermometer-high fs-2"></i></span>
                 <h5 class="head1 py-3">Max. Temperature</h5>
