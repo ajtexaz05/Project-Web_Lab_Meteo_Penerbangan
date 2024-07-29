@@ -101,7 +101,10 @@
                       padding: 9px 24px;
                       background-color: #ff0000;
                       color: white;
-                      border-color: #ff0000;" 
+                      border-color: #ff0000;
+                      transition:0.4s;" 
+              onmouseover="this.style.backgroundColor='white'; this.style.color='#ff0000';"
+              onmouseout="this.style.color='white'; this.style.backgroundColor='#ff0000'; this.style.borderColor='#ff0000';"
               data-bs-toggle="modal" data-bs-target="#staticBackdrop">Kontak Kami</a>
         </div>
       </div>
@@ -453,7 +456,7 @@
     {{-- Akhir Weather Information --}}
 
     {{-- Image Pop Up --}}
-    <div class="port bg-light">
+    <div class="port bg-light" style="margin-top: 0; padding-top:0;">
       <div class="container">
         <div class="row">
           <div class="col-lg-12">

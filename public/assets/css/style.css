@@ -83,6 +83,11 @@ img {
 .navbar ul li a {
     font-weight: 500;
 }
+
+#navbarNav .tombol-contact:hover {
+    background-color: white;
+    color: #ff0000;
+}
 /* Akhir Navbar */
 
 
@@ -410,11 +415,13 @@ img {
 #about .row button {
     background-color: #ff0000;
     color: white;
+    transition: 0.4s;
 }
 
 #about .row button:hover {
-    background-color: #991818;
-    color: white;
+    background-color:white;
+    color: #ff0000;
+    border: 1px solid #ff0000;
 }
 /* Akhir About */
 
