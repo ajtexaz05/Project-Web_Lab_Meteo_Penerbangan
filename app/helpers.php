@@ -1,8 +1,10 @@
 <?php
 
 use App\Models\DataBanner;
+use App\Models\Peta;
 use App\Models\Section;
 use App\Models\Setting;
+use App\Models\Webinar;
 
 // Untuk Setting
 function get_setting_value($key)
@@ -12,6 +14,22 @@ function get_setting_value($key)
         return $data->value;
     } else {
         return 'empty';
+    }
+}
+
+// Untuk Webinar
+function get_dataWebinar()
+{
+    $data = Webinar::all();
+    return $data;
+}
+
+// Untuk Peta
+function get_peta_data($key)
+{
+    $data = Peta::where('post_as', $key)->first();
+    if (isset($data)) {
+        return $data;
     }
 }
 
