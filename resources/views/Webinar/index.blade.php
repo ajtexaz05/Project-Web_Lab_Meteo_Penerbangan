@@ -23,11 +23,11 @@
             <a class="nav-link" href="/">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#about">Tentang</a>
+            <a class="nav-link" href="/dataPeta">Peta Lengkap</a>
           </li>
-          {{-- <li class="nav-item">
-            <a class="nav-link" href="#weatherInformation">Informasi Cuaca</a>
-          </li> --}}
+          <li class="nav-item">
+            <a class="nav-link" href="/dataWebinar">Webinar</a>
+          </li>
         </ul>
         <a href="" class="btn btn-brand ms-lg-3 tombol-contact" style="
                     padding: 9px 24px;
@@ -95,7 +95,7 @@
       {{-- Akhir Modal Navbar Bagian Contact --}}
 
   {{-- Webinar --}}
-  <section class="webinar bg-light p-5" id="webinar">
+<section class="webinar bg-light p-5" id="webinar">
     <div class="container py-5">
       <div class="row text-center mb-4">
         <div class="col-lg-6 m-auto">
@@ -137,18 +137,18 @@
             </div>
           </div>
         </div>
-      </div>
+    </div>
       {{-- Baris ke 2 --}}
-      <div class="row mt-5" style="display: flex; justify-content:center; align-items:center">
+    <div class="row mt-5" style="display: flex; justify-content:center; align-items:center">
         <div class="col-lg-3 col-sm-3">
-          <div class="card shadow-lg p-2" style="width: 17rem">
-            <img src="{{asset('assets/img/Webinar-1.jpeg')}}" class="card-img-top gallery-webinar" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">PROGRAM STORIUM, STORY METEOROGICAL LABORATORY</h5>
-              <p class="card-text">Tema : Dampak Bentuk Garis Pantai Terhadap Curah Hujan Pesisir</p>
-              {{-- <a href="#" class="btn" style="background-color: #ff0000; color: white;">Lihat</a> --}}
+            <div class="card shadow-lg p-2" style="width: 17rem">
+              <img src="{{asset('assets/img/Webinar-1.jpeg')}}" class="card-img-top gallery-webinar" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">PROGRAM STORIUM, STORY METEOROGICAL LABORATORY</h5>
+                <p class="card-text">Tema : Dampak Bentuk Garis Pantai Terhadap Curah Hujan Pesisir</p>
+                {{-- <a href="#" class="btn" style="background-color: #ff0000; color: white;">Lihat</a> --}}
+              </div>
             </div>
-          </div>
         </div>
         <div class="col-lg-3 col-sm-3">
           <div class="card shadow-lg p-2" style="width: 17rem">
@@ -170,7 +170,18 @@
             </div>
           </div>
         </div>
+        <div class="col-lg-3 col-sm-3">
+            <div class="card shadow-lg p-2" style="width: 17rem">
+              <img src="{{asset('assets/img/Webinar-5.jpeg')}}" class="card-img-top gallery-webinar" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">WEBINAR NASIONAL</h5>
+                <p class="card-text">Sumut Dilanda Cuaca Ekstrim?<br>Tantangan dan Strategi dalam menghadapinya</p>                  
+                {{-- <a href="#" class="btn" style="background-color: #ff0000; color: white;">Lihat</a> --}}
+              </div>
+            </div>
+          </div>
       </div>
+    </div>
       {{-- Baris ke 3 --}}
       <div class="row mt-5" style="display: flex; justify-content:center; align-items:center">
         <div class="col-lg-3 col-sm-3">
@@ -185,16 +196,6 @@
         </div>
         <div class="col-lg-3 col-sm-3">
           <div class="card shadow-lg p-2" style="width: 17rem">
-            <img src="{{asset('assets/img/Webinar-5.jpeg')}}" class="card-img-top gallery-webinar" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">WEBINAR NASIONAL</h5>
-              <p class="card-text">Sumut Dilanda Cuaca Ekstrim?<br>Tantangan dan Strategi dalam menghadapinya</p>                  
-              {{-- <a href="#" class="btn" style="background-color: #ff0000; color: white;">Lihat</a> --}}
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-3 col-sm-3">
-          <div class="card shadow-lg p-2" style="width: 17rem">
             <img src="{{asset('assets/img/Webinar-6.jpeg')}}" class="card-img-top gallery-webinar" alt="...">
             <div class="card-body">
               <h5 class="card-title">INTERNATIONAL CONFERENCE</h5>
@@ -203,8 +204,8 @@
             </div>
           </div>
         </div>
-      </div>
-  </section>
+    </div>
+</section>
   {{-- Akhir Webinar --}}
 
   {{-- Modals Webinar --}}

@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\PetaController;
 use App\Http\Controllers\WebinarController;
 use Illuminate\Support\Facades\Route;
 
@@ -18,4 +19,8 @@ Route::get('/', function () {
     return view('home');
 });
 
+// Webinar
 Route::get('/dataWebinar', [WebinarController::class, 'index']);
+
+// Peta
+Route::get('/dataPeta', [PetaController::class, 'index']);

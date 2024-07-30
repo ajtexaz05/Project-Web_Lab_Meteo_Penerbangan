@@ -107,7 +107,7 @@
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                 <li><a class="dropdown-item" href="#weatherInformation">Cuaca Penerbangan</a></li>
-                <li><a class="dropdown-item" href="#">Peta Cuaca Lengkap</a></li>
+                <li><a class="dropdown-item" href="/dataPeta">Peta Cuaca Lengkap</a></li>
               </ul>
             </li>
             <li class="nav-item">
@@ -601,7 +601,7 @@
         {{-- Baris ke 1 --}}
         <div class="row mt-5" style="display: flex; justify-content:center; align-items:center">
           <div class="col-lg-3 col-sm-3">
-            <div class="card shadow-lg p-2" style="width: 18rem;">
+            <div class="card shadow-lg p-2" style="width: 17rem;">
               <img src="{{asset('assets/img/Webinar-7.jpeg')}}" class="card-img-top gallery-webinar" alt="...">
               <div class="card-body">
                 <h5 class="card-title">PROGRAM STORIUM<br>STORY METEOROGICAL LABORATORY</h5>
@@ -611,7 +611,7 @@
             </div>
           </div>
           <div class="col-lg-3 col-sm-3">
-            <div class="card shadow-lg p-2" style="width: 18rem;">
+            <div class="card shadow-lg p-2" style="width: 17rem;">
               <img src="{{asset('assets/img/Webinar-8.jpeg')}}" class="card-img-top gallery-webinar" alt="...">
               <div class="card-body">
                 <h5 class="card-title">PROGRAM STORIUM<br>STORY METEOROGICAL LABORATORY</h5>
@@ -621,7 +621,7 @@
             </div>
           </div>
           <div class="col-lg-3 col-sm-3">
-            <div class="card shadow-lg p-2" style="width: 18rem;">
+            <div class="card shadow-lg p-2" style="width: 17rem;">
               <img src="{{asset('assets/img/Webinar-9.jpeg')}}" class="card-img-top gallery-webinar" alt="...">
               <div class="card-body">
                 <h5 class="card-title">PROGRAM STORIUM<br>STORY METEOROGICAL LABORATORY</h5>
@@ -634,7 +634,7 @@
         {{-- Baris ke 2 --}}
         <div class="row mt-5" style="display: flex; justify-content:center; align-items:center">
           <div class="col-lg-3 col-sm-3">
-            <div class="card shadow-lg p-2" style="width: 18rem;">
+            <div class="card shadow-lg p-2" style="width: 17rem;">
               <img src="{{asset('assets/img/Webinar-1.jpeg')}}" class="card-img-top gallery-webinar" alt="...">
               <div class="card-body">
                 <h5 class="card-title">PROGRAM STORIUM, STORY METEOROGICAL LABORATORY</h5>
@@ -644,7 +644,7 @@
             </div>
           </div>
           <div class="col-lg-3 col-sm-3">
-            <div class="card shadow-lg p-2" style="width: 18rem;">
+            <div class="card shadow-lg p-2" style="width: 17rem;">
               <img src="{{asset('assets/img/Webinar-2.jpeg')}}" class="card-img-top gallery-webinar" alt="...">
               <div class="card-body">
                 <h5 class="card-title">WEBINAR<br>STORIUM<br>#5</h5>
@@ -654,44 +654,11 @@
             </div>
           </div>
           <div class="col-lg-3 col-sm-3">
-            <div class="card shadow-lg p-2" style="width: 18rem;">
+            <div class="card shadow-lg p-2" style="width: 17rem;">
               <img src="{{asset('assets/img/Webinar-3.jpeg')}}" class="card-img-top gallery-webinar" alt="...">
               <div class="card-body">
                 <h5 class="card-title">WEBINAR NEW AVIATION STORIUM<br>#6</h5>
                 <p class="card-text">Layanan Meteorologi Penerbangan : Perspektif Global dan Nasional</p>
-                {{-- <a href="#" class="btn" style="background-color: #ff0000; color: white;">Lihat</a> --}}
-              </div>
-            </div>
-          </div>
-        </div>
-        {{-- Baris ke 3 --}}
-        <div class="row mt-5" style="display: flex; justify-content:center; align-items:center">
-          <div class="col-lg-3 col-sm-3">
-            <div class="card shadow-lg p-2" style="width: 18rem;">
-              <img src="{{asset('assets/img/Webinar-4.jpeg')}}" class="card-img-top gallery-webinar" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">DIBALIK BENCANA HIDROMETEOROLOGI DI WILAYAH INDONESIA, ADA APA?</h5>
-                {{-- <p class="card-text"></p>                   --}}
-                {{-- <a href="#" class="btn" style="background-color: #ff0000; color: white;">Lihat</a> --}}
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-sm-3">
-            <div class="card shadow-lg p-2" style="width: 18rem;">
-              <img src="{{asset('assets/img/Webinar-5.jpeg')}}" class="card-img-top gallery-webinar" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">WEBINAR NASIONAL</h5>
-                <p class="card-text">Sumut Dilanda Cuaca Ekstrim?<br>Tantangan dan Strategi dalam menghadapinya</p>                  
-                {{-- <a href="#" class="btn" style="background-color: #ff0000; color: white;">Lihat</a> --}}
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-sm-3">
-            <div class="card shadow-lg p-2" style="width: 18rem;">
-              <img src="{{asset('assets/img/Webinar-6.jpeg')}}" class="card-img-top gallery-webinar" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">INTERNATIONAL CONFERENCE</h5>
-                <p class="card-text"></p>                  
                 {{-- <a href="#" class="btn" style="background-color: #ff0000; color: white;">Lihat</a> --}}
               </div>
             </div>
