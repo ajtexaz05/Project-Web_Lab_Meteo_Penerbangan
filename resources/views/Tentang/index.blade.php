@@ -16,15 +16,15 @@
 @section('konten')
 
 
-{{-- Webinar --}}
+{{-- Tentang --}}
 <section class="webinar bg-light p-5" id="webinar">
     <div class="container py-5">
       <div class="row text-center mb-4">
         <div class="col-lg-6 m-auto">
           <p>Informasi</p>
-          <h1>PETA</h1>
+          <h1>Tentang</h1>
           <div class="line my-4"></div>
-          <p style="color: black">Cloud Type, SIGWX, Wind, dll.</p>
+          <p style="color: black">Informasi Tentang LAB</p>
         </div>
       </div>
       {{-- Baris ke 1 --}}

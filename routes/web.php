@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\PetaController;
+use App\Http\Controllers\TentangController;
 use App\Http\Controllers\WebinarController;
 use Illuminate\Support\Facades\Route;
 
@@ -18,6 +19,9 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('home');
 });
+
+// Tentang
+Route::get('/dataTentang', [TentangController::class, 'index']);
 
 // Webinar
 Route::get('/dataWebinar', [WebinarController::class, 'index']);

@@ -86,7 +86,7 @@
     {{-- Main Navbar --}}
     <nav class="navbar navbar-expand-lg bg-white fixed-top">
       <div class="container">
-        <a class="navbar-brand" href="#">LAB. <span>METEO PENERBANGAN</span></a>
+        <a class="navbar-brand nav-link" href="/">LAB. <span>METEO PENERBANGAN</span></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -96,7 +96,7 @@
               <a class="nav-link" href="/">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#about">Tentang</a>
+              <a class="nav-link" href="/dataTentang">Tentang</a>
             </li>
             {{-- <li class="nav-item">
               <a class="nav-link" href="#weatherInformation">Informasi Cuaca</a>
