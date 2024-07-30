@@ -13,6 +13,17 @@
 
   // Untuk Data Banner
   $data_gambar_lengkap = get_dataBanner();
+
+  // Untuk Data Webinar(Data Belum Digunakan)
+  $data_gambar_webinar = get_dataWebinar();
+
+  // Untuk Data Peta(Data Belum Digunakan)
+  $awan_cb = get_peta_data('AWAN_CB');
+  $prakiraan_area_00_UTC = get_peta_data('PRAKIRAAN_AREA_00_UTC');
+  $cloud_type = get_peta_data('CLOUD_TYPE');
+  $peta_wind = get_peta_data('WIND');
+  $medium_level_SIGWX = get_peta_data('MEDIUM_LEVEL_SIGWX');
+  $high_level_SIGWX = get_peta_data('HIGH_LEVEL_SIGWX');
     
   // Untuk Section
   $Banner1 = get_section_data('JUMBOTRON1');
@@ -82,19 +93,28 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <a class="nav-link" href="#">Home</a>
+              <a class="nav-link" href="/">Home</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#about">Tentang</a>
             </li>
-            <li class="nav-item">
+            {{-- <li class="nav-item">
               <a class="nav-link" href="#weatherInformation">Informasi Cuaca</a>
+            </li> --}}
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#weatherInformation" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Informasi Cuaca
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#weatherInformation">Cuaca Penerbangan</a></li>
+                <li><a class="dropdown-item" href="#">Peta Cuaca Lengkap</a></li>
+              </ul>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#gallery">Gambar</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#webinar">Webinar</a>
+              <a class="nav-link" href="/dataWebinar">Webinar</a>
             </li>
           </ul>
           <a href="" class="btn btn-brand ms-lg-3 tombol-contact" style="
