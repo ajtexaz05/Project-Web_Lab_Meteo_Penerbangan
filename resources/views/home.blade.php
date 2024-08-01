@@ -734,7 +734,7 @@
         <div class="row text-center text-md-left">
           <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
             <h5 class="text-uppercase mb-4 font-weight-bold" style="color: #ff0000">Lab Meteorologi Penerbangan</h5>
-            <p style="text-align: justify;">{!! $Banner1->content !!}</p>
+            <p style="text-align:justify;">{!! $Banner1->content !!}</p>
           </div>
             <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
               <h5 class="text-uppercase mb-4 font-weight-bold" style="color: #ff0000">Informasi Cuaca Penerbangan</h5>

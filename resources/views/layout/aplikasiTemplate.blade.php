@@ -46,9 +46,9 @@
                 <li><a class="dropdown-item" href="/dataPeta">Peta Cuaca Lengkap</a></li>
               </ul>
             </li>
-            {{-- <li class="nav-item">
-              <a class="nav-link" href="#gallery">Gambar</a>
-            </li> --}}
+            <li class="nav-item">
+              <a class="nav-link" href="#gallery">FAQ</a>
+            </li>
             <li class="nav-item">
               <a class="nav-link" href="/dataWebinar">Webinar</a>
             </li>
@@ -65,6 +65,7 @@
         </div>
       </div>
     </nav>
+    <br>
     {{-- Akhir Main Navbar --}}
 
     {{-- Modal Navbar Bagian Contact --}}
