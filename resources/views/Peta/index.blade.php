@@ -28,6 +28,15 @@
     filter: brightness(0.6);
   }
 
+  #dataImage {
+    cursor: pointer;
+    transition: 0.3s;
+  }
+
+  #dataImage:hover {
+    transform: scale(1.03);
+  }
+
 </style>
 
 {{-- Carousel --}}
@@ -41,9 +50,9 @@
       <img src="{{asset('assets/img/img-1.jpg')}}" class="d-block w-100 c-img" alt="...">
       <div class="carousel-caption top-0 mt-4" style="">
         <h5 class="mt-5 fs-3 text-uppercase">Peta Cuaca</h5>
-        <p class="fw-bolder shadow-lg text-capitalize mt-5">Ini merupakan Website Lab Meteorologi Penerbangan sebagai bentuk pembelajaran Taruna/i Program Studi Diploma IV 
-          Meteorologi yang menghasilkan data yang diperuntukkan bukan hanya untuk mengetahui 
-          informasi data pengamatan cuaca harian, namun juga dapat memberikan informasi cuaca penerbangan</p>
+        <p class="fw-bolder shadow-lg text-capitalize mt-5">Peta cuaca adalah alat grafis yang menyajikan informasi 
+          meteorologi tentang kondisi atmosfer di suatu wilayah pada waktu tertentu. Peta ini dirancang untuk memudahkan 
+          pemahaman dan analisis berbagai elemen cuaca.</p>
           <button class="btn btn-primary px-4 py-2 fs-6 mt-5">Selengkapnya</button>
       </div>
     </div>
@@ -51,11 +60,8 @@
       <img src="{{asset('assets/img/Peta-cuaca.png')}}" class="d-block w-100 c-img" alt="...">
       <div class="carousel-caption top-0 mt-4">
         <h5 class="mt-5 fs-3 text-uppercase">Data 6 Peta</h5>
-        <p class="fw-bolder shadow-lg text-capitalize mt-5">Ini merupakan Website Lab Meteorologi Penerbangan yang bertujuan 
-          untuk <br> memberikan data 
-          hasil meteorologi penerbangan dan data informasi cuaca kepada masyarakat.
-          Hasil data yang diambil merupakan hasil dari pengamatan menggunakan alat alat pengamatan 
-          cuaca penerbangan yang ada di  Kampus STMKG.</p>
+        <p class="fw-bolder shadow-lg text-capitalize mt-5">Terdapat 6 Peta yang diberikan, Yakni Peta Awan CB, 
+          Prakiraan Cuaca 00 UTC, Wind, Cloud Type, Medium SIGWX, dan High SIGWX</p>
           <button class="btn btn-primary px-4 py-2 fs-6 mt-5">Selengkapnya</button>
       </div>
     </div>
@@ -89,11 +95,10 @@
     <div class="row g-6">
       <div class="col-12 col-lg-6 mt-3">
         <div class="card mb-3">
-          <img src="{{ Storage::url($awan_cb->thumbnail) }}" class="card-img-top" alt="...">
+          <img src="{{ Storage::url($awan_cb->thumbnail) }}" class="card-img-top gallery-webinar" id="dataImage" alt="...">
           <div class="card-body">
             <h5 class="card-title">{!! $awan_cb->title !!}</h5>
             <p class="card-text"><small class="text-muted">Active</small></p>
-            <button class="btn d-inline-block" data-bs-toggle="modal" data-bs-target="#modalAbout">Selengkapnya</button>
           </div>
         </div>
       </div>
@@ -111,11 +116,10 @@
     <div class="row g-6">
       <div class="col-12 col-lg-6 mt-3">
         <div class="card mb-3">
-          <img src="{{ Storage::url($prakiraan_area_00_UTC->thumbnail) }}" class="card-img-top" alt="...">
+          <img src="{{ Storage::url($prakiraan_area_00_UTC->thumbnail) }}" class="card-img-top gallery-webinar" id="dataImage" alt="...">
           <div class="card-body">
             <h5 class="card-title">{!! $prakiraan_area_00_UTC->title !!}</h5>
             <p class="card-text"><small class="text-muted">Active</small></p>
-            <button class="btn d-inline-block" data-bs-toggle="modal" data-bs-target="#modalAbout">Selengkapnya</button>
           </div>
         </div>
       </div>
@@ -133,11 +137,10 @@
     <div class="row g-6">
       <div class="col-12 col-lg-6 mt-3">
         <div class="card mb-3">
-          <img src="{{ Storage::url($cloud_type->thumbnail) }}" class="card-img-top" alt="...">
+          <img src="{{ Storage::url($cloud_type->thumbnail) }}" class="card-img-top gallery-webinar" id="dataImage" alt="...">
           <div class="card-body">
             <h5 class="card-title">{!! $cloud_type->title !!}</h5>
             <p class="card-text"><small class="text-muted">Active</small></p>
-            <button class="btn d-inline-block" data-bs-toggle="modal" data-bs-target="#modalAbout">Selengkapnya</button>
           </div>
         </div>
       </div>
@@ -155,11 +158,10 @@
     <div class="row g-6">
       <div class="col-12 col-lg-6 mt-3">
         <div class="card mb-3">
-          <img src="{{ Storage::url($peta_wind->thumbnail) }}" class="card-img-top" alt="...">
+          <img src="{{ Storage::url($peta_wind->thumbnail) }}" class="card-img-top gallery-webinar" id="dataImage" alt="...">
           <div class="card-body">
             <h5 class="card-title">{!! $peta_wind->title !!}</h5>
             <p class="card-text"><small class="text-muted">Active</small></p>
-            <button class="btn d-inline-block" data-bs-toggle="modal" data-bs-target="#modalAbout">Selengkapnya</button>
           </div>
         </div>
       </div>
@@ -177,11 +179,10 @@
     <div class="row g-6">
       <div class="col-12 col-lg-6 mt-3">
         <div class="card mb-3">
-          <img src="{{ Storage::url($medium_level_SIGWX->thumbnail) }}" class="card-img-top" alt="...">
+          <img src="{{ Storage::url($medium_level_SIGWX->thumbnail) }}" class="card-img-top gallery-webinar" id="dataImage" alt="...">
           <div class="card-body">
             <h5 class="card-title">{!! $medium_level_SIGWX->title !!}</h5>
             <p class="card-text"><small class="text-muted">Active</small></p>
-            <button class="btn d-inline-block" data-bs-toggle="modal" data-bs-target="#modalAbout">Selengkapnya</button>
           </div>
         </div>
       </div>
@@ -199,11 +200,10 @@
     <div class="row g-6">
       <div class="col-12 col-lg-6 mt-3">
         <div class="card mb-3">
-          <img src="{{ Storage::url($high_level_SIGWX->thumbnail) }}" class="card-img-top" alt="...">
+          <img src="{{ Storage::url($high_level_SIGWX->thumbnail) }}" class="card-img-top gallery-webinar" id="dataImage" alt="...">
           <div class="card-body">
             <h5 class="card-title">{!! $high_level_SIGWX->title !!}</h5>
             <p class="card-text"><small class="text-muted">Active</small></p>
-            <button class="btn d-inline-block" data-bs-toggle="modal" data-bs-target="#modalAbout">Selengkapnya</button>
           </div>
         </div>
       </div>
@@ -219,24 +219,22 @@
     
   </section>
   {{-- Akhir About --}}
-  
-  {{-- Modal About --}}
-  <div class="modal fade" id="modalAbout" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-    <div class="modal-dialog modal-lg modal-dialog-centered">
+
+  {{-- Modals Peta --}}
+  <!-- Modal -->
+  <div class="modal fade" id="webinar-popup" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
       <div class="modal-content">
         <div class="modal-header">
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
-          <div class="container-fluid">
-            <img src="{{ Storage::url($TentangAbout->thumbnail) }}" alt="" class="img-fluid">
-            <p>{!! $TentangAbout->content !!}</p>
-          </div>
+          <img src="{{asset('assets/img/Webinar-6.jpeg')}}" alt="" class="modal-webinar">
         </div>
       </div>
     </div>
   </div>
-  {{-- Akhir Modal About --}}
+  {{-- Akhir Modals Webinar --}}
 
 
 @endsection

@@ -3,14 +3,6 @@
 {{-- Data Webinar dari Filament --}}
 @php
 
-    // Untuk Data Peta(Data Belum Digunakan)
-    $awan_cb = get_peta_data('AWAN_CB');
-    $prakiraan_area_00_UTC = get_peta_data('PRAKIRAAN_AREA_00_UTC');
-    $cloud_type = get_peta_data('CLOUD_TYPE');
-    $peta_wind = get_peta_data('WIND');
-    $medium_level_SIGWX = get_peta_data('MEDIUM_LEVEL_SIGWX');
-    $high_level_SIGWX = get_peta_data('HIGH_LEVEL_SIGWX');
-
     $TentangAbout = get_section_data('ABOUT');
 
 @endphp

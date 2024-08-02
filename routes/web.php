@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\FAQController;
 use App\Http\Controllers\PetaController;
 use App\Http\Controllers\TentangController;
 use App\Http\Controllers\WebinarController;
@@ -28,3 +29,6 @@ Route::get('/dataWebinar', [WebinarController::class, 'index']);
 
 // Peta
 Route::get('/dataPeta', [PetaController::class, 'index']);
+
+// FAQ
+Route::get('/dataFAQ', [FAQController::class, 'index']);

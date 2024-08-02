@@ -47,7 +47,7 @@
               </ul>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#gallery">FAQ</a>
+              <a class="nav-link" href="/dataFAQ">FAQ</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="/dataWebinar">Webinar</a>
