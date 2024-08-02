@@ -34,9 +34,10 @@
       <img src="{{asset('assets/img/Webinar-6.jpeg')}}" class="d-block w-100 c-img" alt="...">
       <div class="carousel-caption top-0 mt-4" style="">
         <h5 class="mt-5 fs-3 text-uppercase">Kumpulan Webinar</h5>
-        <p class="fw-bolder shadow-lg text-capitalize mt-5">Peta cuaca adalah alat grafis yang menyajikan informasi 
-          meteorologi tentang kondisi atmosfer di suatu wilayah pada waktu tertentu. Peta ini dirancang untuk memudahkan 
-          pemahaman dan analisis berbagai elemen cuaca.</p>
+        <p class="fw-bolder shadow-lg text-capitalize mt-5">Kumpulan webinar adalah serangkaian webinar atau seminar online
+           yang sering kali diselenggarakan dengan tema atau topik tertentu. Webinar adalah seminar atau presentasi yang 
+           dilakukan secara daring menggunakan platform video konferensi. Kumpulan webinar biasanya dirancang untuk memberikan
+            informasi, pelatihan, atau diskusi mendalam mengenai subjek tertentu dalam beberapa sesi atau acara terpisah.</p>
           <button class="btn btn-primary px-4 py-2 fs-6 mt-5">Selengkapnya</button>
       </div>
     </div>
@@ -44,8 +45,11 @@
       <img src="{{asset('assets/img/Webinar-8.jpeg')}}" class="d-block w-100 c-img" alt="...">
       <div class="carousel-caption top-0 mt-4">
         <h5 class="mt-5 fs-3 text-uppercase">Webinar Pembelajaran</h5>
-        <p class="fw-bolder shadow-lg text-capitalize mt-5">Terdapat 6 Peta yang diberikan, Yakni Peta Awan CB, 
-          Prakiraan Cuaca 00 UTC, Wind, Cloud Type, Medium SIGWX, dan High SIGWX</p>
+        <p class="fw-bolder shadow-lg text-capitalize mt-5">Webinar pembelajaran adalah seminar atau presentasi online 
+          yang dirancang khusus untuk tujuan pendidikan atau pelatihan. Webinar ini dapat mencakup berbagai topik yang 
+          berkaitan dengan pembelajaran dan pengembangan keterampilan, baik untuk individu maupun kelompok. 
+          Tujuan utamanya adalah untuk menyampaikan informasi, konsep, atau keterampilan baru kepada peserta dengan cara 
+          yang interaktif dan mudah diakses.</p>
           <button class="btn btn-primary px-4 py-2 fs-6 mt-5">Selengkapnya</button>
       </div>
     </div>

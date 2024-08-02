@@ -98,7 +98,7 @@
           <img src="{{ Storage::url($awan_cb->thumbnail) }}" class="card-img-top gallery-webinar" id="dataImage" alt="...">
           <div class="card-body">
             <h5 class="card-title">{!! $awan_cb->title !!}</h5>
-            <p class="card-text"><small class="text-muted">Active</small></p>
+            <p class="card-text"><i class="bi bi-circle-fill" style="color: rgb(96, 246, 96); font-size:11px;"><small class="text-muted"> Active</small></i></p>
           </div>
         </div>
       </div>
@@ -119,7 +119,7 @@
           <img src="{{ Storage::url($prakiraan_area_00_UTC->thumbnail) }}" class="card-img-top gallery-webinar" id="dataImage" alt="...">
           <div class="card-body">
             <h5 class="card-title">{!! $prakiraan_area_00_UTC->title !!}</h5>
-            <p class="card-text"><small class="text-muted">Active</small></p>
+            <p class="card-text"><i class="bi bi-circle-fill" style="color: rgb(96, 246, 96); font-size:11px;"><small class="text-muted"> Active</small></i></p>
           </div>
         </div>
       </div>
@@ -140,7 +140,7 @@
           <img src="{{ Storage::url($cloud_type->thumbnail) }}" class="card-img-top gallery-webinar" id="dataImage" alt="...">
           <div class="card-body">
             <h5 class="card-title">{!! $cloud_type->title !!}</h5>
-            <p class="card-text"><small class="text-muted">Active</small></p>
+            <p class="card-text"><i class="bi bi-circle-fill" style="color: rgb(96, 246, 96); font-size:11px;"><small class="text-muted"> Active</small></i></p>
           </div>
         </div>
       </div>
@@ -161,7 +161,7 @@
           <img src="{{ Storage::url($peta_wind->thumbnail) }}" class="card-img-top gallery-webinar" id="dataImage" alt="...">
           <div class="card-body">
             <h5 class="card-title">{!! $peta_wind->title !!}</h5>
-            <p class="card-text"><small class="text-muted">Active</small></p>
+            <p class="card-text"><i class="bi bi-circle-fill" style="color: rgb(96, 246, 96); font-size:11px;"><small class="text-muted"> Active</small></i></p>
           </div>
         </div>
       </div>
@@ -182,7 +182,7 @@
           <img src="{{ Storage::url($medium_level_SIGWX->thumbnail) }}" class="card-img-top gallery-webinar" id="dataImage" alt="...">
           <div class="card-body">
             <h5 class="card-title">{!! $medium_level_SIGWX->title !!}</h5>
-            <p class="card-text"><small class="text-muted">Active</small></p>
+            <p class="card-text"><i class="bi bi-circle-fill" style="color: rgb(96, 246, 96); font-size:11px;"><small class="text-muted"> Active</small></i></p>
           </div>
         </div>
       </div>
@@ -203,7 +203,7 @@
           <img src="{{ Storage::url($high_level_SIGWX->thumbnail) }}" class="card-img-top gallery-webinar" id="dataImage" alt="...">
           <div class="card-body">
             <h5 class="card-title">{!! $high_level_SIGWX->title !!}</h5>
-            <p class="card-text"><small class="text-muted">Active</small></p>
+            <p class="card-text"><i class="bi bi-circle-fill" style="color: rgb(96, 246, 96); font-size:11px;"><small class="text-muted"> Active</small></i></p>
           </div>
         </div>
       </div>
