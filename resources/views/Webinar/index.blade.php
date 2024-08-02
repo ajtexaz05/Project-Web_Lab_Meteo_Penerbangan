@@ -3,7 +3,6 @@
 {{-- Data Webinar dari Filament --}}
 @php
 
-    // Untuk Data Webinar(Data Belum Digunakan)
     $data_gambar_webinar = get_dataWebinar();
 
 @endphp

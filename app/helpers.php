@@ -4,6 +4,7 @@ use App\Models\DataBanner;
 use App\Models\Peta;
 use App\Models\Section;
 use App\Models\Setting;
+use App\Models\TanyaJawab;
 use App\Models\Webinar;
 
 // Untuk Setting
@@ -40,6 +41,13 @@ function get_section_data($key)
     if (isset($data)) {
         return $data;
     }
+}
+
+// Untuk FAQ (Tanya Jawab)
+function get_dataTanyaJawab()
+{
+    $data = TanyaJawab::all();
+    return $data;
 }
 
 // Untuk Data Banner
