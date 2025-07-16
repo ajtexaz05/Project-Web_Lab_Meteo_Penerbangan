@@ -234,13 +234,13 @@
         </div>
 
         <div class="item">
-          <img src="{{ Storage::url($Banner4->thumbnail) }}" alt="">
+          <img src="{{ Storage::url($Banner4?->thumbnail) }}" alt="">
 
           <div class="content">
             <div class="title shadow-sm">Meteorologi Penerbangan</div>
-            <div class="type shadow-sm mt-2">{{ $Banner4->title }}</div>
+            <div class="type shadow-sm mt-2">{{ $Banner4?->title }}</div>
             <div class="description">
-              {!! $Banner4->content !!}
+              {!! $Banner4?->content !!}
             </div>
             <div class="button">
               <a href="#weatherInformation"><button>Selengkapnya</button></a>
@@ -254,16 +254,16 @@
       <div class="thumbnail">
 
         <div class="item">
-          <img src="{{ Storage::url($Banner1->thumbnail) }}" alt="">
+          <img src="{{ Storage::url($Banner1?->thumbnail) }}" alt="">
         </div>
         <div class="item">
-          <img src="{{ Storage::url($Banner2->thumbnail) }}" alt="">
+          <img src="{{ Storage::url($Banner2?->thumbnail) }}" alt="">
         </div>
         <div class="item">
-          <img src="{{ Storage::url($Banner3->thumbnail) }}" alt="">
+          <img src="{{ Storage::url($Banner3?->thumbnail) }}" alt="">
         </div>
         <div class="item">
-          <img src="{{ Storage::url($Banner4->thumbnail) }}" alt="">
+          <img src="{{ Storage::url($Banner4?->thumbnail) }}" alt="">
         </div>
 
       </div>

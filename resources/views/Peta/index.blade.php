@@ -95,9 +95,9 @@
     <div class="row g-6">
       <div class="col-12 col-lg-6 mt-3">
         <div class="card mb-3">
-          <img src="{{ Storage::url($awan_cb->thumbnail) }}" class="card-img-top gallery-webinar" id="dataImage" alt="...">
+          <img src="{{ Storage::url($awan_cb?->thumbnail) }}" class="card-img-top gallery-webinar" id="dataImage" alt="...">
           <div class="card-body">
-            <h5 class="card-title">{!! $awan_cb->title !!}</h5>
+            <h5 class="card-title">{!! $awan_cb?->title !!}</h5>
             <p class="card-text"><i class="bi bi-circle-fill" style="color: rgb(96, 246, 96); font-size:11px;"><small class="text-muted"> Active</small></i></p>
           </div>
         </div>
@@ -105,8 +105,8 @@
       <div class="col-12 col-lg-6 mt-3">
         <div class="card">
           <div class="card-body" style="overflow:scroll; height:540px;">
-            <h5 class="card-title">{!! $awan_cb->title !!}</h5>
-            <p class="card-text">{!! $awan_cb->content !!}</p>
+            <h5 class="card-title">{!! $awan_cb?->title !!}</h5>
+            <p class="card-text">{!! $awan_cb?->content !!}</p>
           </div>
         </div>
       </div>
@@ -137,9 +137,9 @@
     <div class="row g-6">
       <div class="col-12 col-lg-6 mt-3">
         <div class="card mb-3">
-          <img src="{{ Storage::url($cloud_type->thumbnail) }}" class="card-img-top gallery-webinar" id="dataImage" alt="...">
+          <img src="{{ Storage::url($cloud_type?->thumbnail) }}" class="card-img-top gallery-webinar" id="dataImage" alt="...">
           <div class="card-body">
-            <h5 class="card-title">{!! $cloud_type->title !!}</h5>
+            <h5 class="card-title">{!! $cloud_type?->title !!}</h5>
             <p class="card-text"><i class="bi bi-circle-fill" style="color: rgb(96, 246, 96); font-size:11px;"><small class="text-muted"> Active</small></i></p>
           </div>
         </div>
@@ -147,8 +147,8 @@
       <div class="col-12 col-lg-6 mt-3">
         <div class="card">
           <div class="card-body" style="overflow:scroll; height:450px;">
-            <h5 class="card-title">{!! $cloud_type->title !!}</h5>
-            <p class="card-text">{!! $cloud_type->content !!}</p>
+            <h5 class="card-title">{!! $cloud_type?->title !!}</h5>
+            <p class="card-text">{!! $cloud_type?->content !!}</p>
           </div>
         </div>
       </div>
@@ -158,9 +158,9 @@
     <div class="row g-6">
       <div class="col-12 col-lg-6 mt-3">
         <div class="card mb-3">
-          <img src="{{ Storage::url($peta_wind->thumbnail) }}" class="card-img-top gallery-webinar" id="dataImage" alt="...">
+          <img src="{{ Storage::url($peta_wind?->thumbnail) }}" class="card-img-top gallery-webinar" id="dataImage" alt="...">
           <div class="card-body">
-            <h5 class="card-title">{!! $peta_wind->title !!}</h5>
+            <h5 class="card-title">{!! $peta_wind?->title !!}</h5>
             <p class="card-text"><i class="bi bi-circle-fill" style="color: rgb(96, 246, 96); font-size:11px;"><small class="text-muted"> Active</small></i></p>
           </div>
         </div>
@@ -168,8 +168,8 @@
       <div class="col-12 col-lg-6 mt-3">
         <div class="card">
           <div class="card-body" style="overflow:scroll; height:580px;">
-            <h5 class="card-title">{!! $peta_wind->title !!}</h5>
-            <p class="card-text">{!! $peta_wind->content !!}</p>
+            <h5 class="card-title">{!! $peta_wind?->title !!}</h5>
+            <p class="card-text">{!! $peta_wind?->content !!}</p>
           </div>
         </div>
       </div>
@@ -179,9 +179,9 @@
     <div class="row g-6">
       <div class="col-12 col-lg-6 mt-3">
         <div class="card mb-3">
-          <img src="{{ Storage::url($medium_level_SIGWX->thumbnail) }}" class="card-img-top gallery-webinar" id="dataImage" alt="...">
+          <img src="{{ Storage::url($medium_level_SIGWX?->thumbnail) }}" class="card-img-top gallery-webinar" id="dataImage" alt="...">
           <div class="card-body">
-            <h5 class="card-title">{!! $medium_level_SIGWX->title !!}</h5>
+            <h5 class="card-title">{!! $medium_level_SIGWX?->title !!}</h5>
             <p class="card-text"><i class="bi bi-circle-fill" style="color: rgb(96, 246, 96); font-size:11px;"><small class="text-muted"> Active</small></i></p>
           </div>
         </div>
@@ -189,8 +189,8 @@
       <div class="col-12 col-lg-6 mt-3">
         <div class="card">
           <div class="card-body" style="overflow:scroll; height:488px;">
-            <h5 class="card-title">{!! $medium_level_SIGWX->title !!}</h5>
-            <p class="card-text">{!! $medium_level_SIGWX->content !!}</p>
+            <h5 class="card-title">{!! $medium_level_SIGWX?->title !!}</h5>
+            <p class="card-text">{!! $medium_level_SIGWX?->content !!}</p>
           </div>
         </div>
       </div>
@@ -200,9 +200,9 @@
     <div class="row g-6">
       <div class="col-12 col-lg-6 mt-3">
         <div class="card mb-3">
-          <img src="{{ Storage::url($high_level_SIGWX->thumbnail) }}" class="card-img-top gallery-webinar" id="dataImage" alt="...">
+          <img src="{{ Storage::url($high_level_SIGWX?->thumbnail) }}" class="card-img-top gallery-webinar" id="dataImage" alt="...">
           <div class="card-body">
-            <h5 class="card-title">{!! $high_level_SIGWX->title !!}</h5>
+            <h5 class="card-title">{!! $high_level_SIGWX?->title !!}</h5>
             <p class="card-text"><i class="bi bi-circle-fill" style="color: rgb(96, 246, 96); font-size:11px;"><small class="text-muted"> Active</small></i></p>
           </div>
         </div>
@@ -210,8 +210,8 @@
       <div class="col-12 col-lg-6 mt-3">
         <div class="card">
           <div class="card-body" style="overflow:scroll; height:650px;">
-            <h5 class="card-title">{!! $high_level_SIGWX->title !!}</h5>
-            <p class="card-text">{!! $high_level_SIGWX->content !!}</p>
+            <h5 class="card-title">{!! $high_level_SIGWX?->title !!}</h5>
+            <p class="card-text">{!! $high_level_SIGWX?->content !!}</p>
           </div>
         </div>
       </div>
